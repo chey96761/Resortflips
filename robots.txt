@@ -1,0 +1,8 @@
+# ResortFlips — robots.txt
+# https://resortflips.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://resortflips.com/sitemap.xml

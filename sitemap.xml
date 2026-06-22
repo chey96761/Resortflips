@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://resortflips.com/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-home.png</image:loc>
+      <image:title>ResortFlips — The Zillow of Vacation Ownership</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/deal-analyzer.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/charts.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Timeshare Point Charts — All Brands, One Place</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/staroptions-chart.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Vistana StarOptions Chart — Free Lookup Tool</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/marriott-points-chart.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Marriott Abound Points Chart — 48 Verified Resorts</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/dvc-points-chart.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>DVC Points Chart — All 17 Resorts Verified</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/what-can-i-book.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-reverse.png</image:loc>
+      <image:title>What Can I Book With My StarOptions? — Reverse Lookup</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/compare.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/point-converter.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/glossary.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/brands.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/about.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/contact.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/privacy.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/terms.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+
+  <url>
+    <loc>https://resortflips.com/hyatt-points-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Hyatt Residence Club Points Chart</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/hgvc-points-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Hilton Grand Vacations Points Chart</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/wyndham-points-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Club Wyndham Points Chart</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/worldmark-points-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>WorldMark by Wyndham Credit Chart</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/diamond-hgv-max-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Diamond Resorts / HGV Max Trust Collections</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/embarc-points-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Embarc Resorts Points Chart</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/four-seasons-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Four Seasons Residence Club Reference</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/montage-residences-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Montage Residences Reference</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://resortflips.com/westin-whistler-chart.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-chart.png</image:loc>
+      <image:title>Westin Whistler Phase 2 Reference</image:title>
+    </image:image>
+  </url>
+
+
+  <url>
+    <loc>https://resortflips.com/rentals.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://resortflips.com/og/og-home.png</image:loc>
+      <image:title>Owner-Direct Timeshare Rentals</image:title>
+    </image:image>
+  </url>
+
+</urlset>
