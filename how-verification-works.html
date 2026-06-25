@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Verification Works — Renting & Buying Safely | ResortFlips</title>
+<meta name="description" content="How ResortFlips verifies every listing and protects your money. Reservations confirmed with the resort, ownership verified for resales, and rental funds held until 24–48 hours after check-in.">
+<meta name="robots" content="index, follow">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#FF7A59">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="ResortFlips">
+<meta name="msapplication-TileColor" content="#FF7A59">
+
+<link rel="canonical" href="https://resortflips.com/how-verification-works.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ResortFlips">
+<meta property="og:title" content="How Verification Works on ResortFlips">
+<meta property="og:description" content="Reservations confirmed with the resort, ownership verified for resales, and rental payments held until 24–48 hours after check-in. Here's exactly how we protect both sides.">
+<meta property="og:url" content="https://resortflips.com/how-verification-works.html">
+<meta property="og:image" content="https://resortflips.com/og/og-home.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- FAQ structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does ResortFlips verify a rental?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a guest books, ResortFlips confirms the reservation directly with the resort — the confirmation number and the name on the booking — before the guest's card is charged. The payment is then held securely and released to the owner 24–48 hours after the guest checks in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is my rental payment released to the owner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your payment is held securely from the time you book until 24–48 hours after you check in. If the reservation is not honored at check-in, you receive a full refund."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are resale listings verified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For sales, the seller uploads proof of ownership — a deed or recent maintenance-fee statement — and attests that fees are current with no liens. At closing, a title and estoppel check with the resort confirms a clean transfer before any funds are released to the seller."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I rent out points or a floating week before I book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can list points and floating weeks, but the listing shows as Awaiting Reservation until you book a confirmed week with specific dates. Once you add your confirmation number, ResortFlips verifies it with the resort and the listing becomes bookable."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --midnight:#0B1D2E; --ink:#1A2B3A; --coral:#FF7A59; --teal:#0EA5A4; --gold:#FFB627;
+  --paper:#FFF8F0; --cream:#FFEFDB; --line:rgba(26,43,58,.08); --mute:#6B7A89;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',-apple-system,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--midnight);text-decoration:none;letter-spacing:-0.5px}
+.logo em{color:var(--coral);font-style:normal}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+.nav-links a:hover{color:var(--coral)}
+.nav-cta{background:var(--midnight);color:white;padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600}
+.nav-cta:hover{background:var(--coral)}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+
+/* HERO */
+.hero{padding:80px 28px 40px;max-width:1080px;margin:0 auto}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--coral);border:1px solid var(--coral);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+h1{font-family:var(--serif);font-weight:900;font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-2px;color:var(--midnight);margin-bottom:18px;max-width:900px}
+h1 em{font-style:italic;color:var(--coral);font-weight:500}
+.lead{font-size:20px;color:var(--mute);max-width:640px;line-height:1.55}
+
+/* STORY SECTION */
+.story{max-width:760px;margin:0 auto;padding:30px 28px 50px}
+.story-block{margin-bottom:54px}
+.story-block:last-child{margin-bottom:0}
+.story-block h2{font-family:var(--serif);font-weight:700;font-size:34px;color:var(--midnight);letter-spacing:-0.8px;line-height:1.1;margin-bottom:16px}
+.story-block h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.story-block p{font-size:17px;color:var(--ink);margin-bottom:16px;line-height:1.7}
+.story-block p:last-child{margin-bottom:0}
+.story-block strong{color:var(--midnight);font-weight:600}
+
+/* PULL QUOTE */
+.pull-quote{
+  margin:36px 0;padding:28px 32px;
+  background:white;border-left:4px solid var(--coral);border-radius:0 14px 14px 0;
+  font-family:var(--serif);font-size:22px;font-weight:500;font-style:italic;
+  color:var(--midnight);line-height:1.45;letter-spacing:-0.3px;
+}
+.pull-quote::before{content:'"';color:var(--coral);font-size:60px;line-height:0.5;vertical-align:-0.2em;margin-right:4px}
+
+/* PILLARS */
+.pillars{max-width:1080px;margin:0 auto;padding:40px 28px 60px}
+.pillars-head{text-align:center;margin-bottom:40px}
+.pillars-head h2{font-family:var(--serif);font-weight:700;font-size:38px;color:var(--midnight);letter-spacing:-1px;margin-bottom:10px}
+.pillars-head h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.pillars-head .sub{color:var(--mute);font-size:16px;max-width:560px;margin:0 auto}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:760px){.pillar-grid{grid-template-columns:1fr}}
+.pillar{
+  background:white;border:1px solid var(--line);border-radius:18px;
+  padding:28px;transition:all 0.2s;
+}
+.pillar:hover{transform:translateY(-2px);box-shadow:0 16px 40px -16px rgba(11,29,46,0.18);border-color:#d6cdb8}
+.pillar-num{
+  font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:2px;
+  color:var(--coral);font-weight:600;margin-bottom:14px;
+}
+.pillar h3{
+  font-family:var(--serif);font-weight:700;font-size:22px;color:var(--midnight);
+  letter-spacing:-0.4px;margin-bottom:10px;line-height:1.2;
+}
+.pillar p{font-size:14.5px;color:var(--ink);line-height:1.6}
+
+/* FOUNDER */
+.founder{background:white;padding:60px 28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.founder-inner{max-width:880px;margin:0 auto;display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start}
+@media(max-width:680px){.founder-inner{grid-template-columns:1fr;gap:24px}}
+.founder-card{
+  background:linear-gradient(135deg,var(--midnight),#15314D);
+  border-radius:24px;padding:32px 24px;text-align:center;color:white;
+  position:sticky;top:90px;
+}
+@media(max-width:680px){.founder-card{position:static}}
+.founder-mark{
+  width:80px;height:80px;border-radius:18px;
+  background:linear-gradient(135deg,var(--coral),#F5A07B);
+  font-family:var(--serif);font-weight:900;font-size:42px;color:white;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;letter-spacing:-2px;
+}
+.founder-name{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-0.3px}
+.founder-title{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#9ba8bd;margin-top:6px}
+.founder-stats{display:flex;justify-content:space-around;margin-top:22px;padding-top:18px;border-top:1px solid #1f3147}
+.founder-stat-num{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--coral);line-height:1}
+.founder-stat-lbl{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1px;color:#9ba8bd;margin-top:4px}
+
+.founder-bio h2{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--midnight);letter-spacing:-0.6px;margin-bottom:14px}
+.founder-bio h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.founder-bio p{font-size:16px;color:var(--ink);margin-bottom:14px;line-height:1.65}
+.founder-bio .signature{
+  font-family:var(--serif);font-style:italic;font-size:20px;color:var(--midnight);
+  margin-top:24px;padding-top:18px;border-top:1px solid var(--line);
+}
+
+/* CTA */
+.cta-section{background:linear-gradient(135deg,var(--midnight),#15314D);color:white;padding:70px 28px}
+.cta-inner{max-width:760px;margin:0 auto;text-align:center}
+.cta-section h2{font-family:var(--serif);font-weight:700;font-size:42px;letter-spacing:-1px;margin-bottom:14px;line-height:1.1}
+.cta-section h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.cta-section p{font-size:17px;color:#9ba8bd;margin-bottom:28px;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-btn{padding:14px 28px;border-radius:999px;font-family:var(--sans);font-size:15px;font-weight:600;text-decoration:none;transition:all 0.15s}
+.cta-primary{background:var(--coral);color:white}
+.cta-primary:hover{background:white;color:var(--midnight)}
+.cta-secondary{background:transparent;color:white;border:1.5px solid #1f3147}
+.cta-secondary:hover{border-color:var(--coral);color:var(--coral)}
+
+/* ===== VERIFICATION PAGE ===== */
+/* audience toggle */
+.aud-toggle{display:inline-flex;background:white;border:1px solid var(--line);border-radius:999px;padding:5px;gap:4px;margin-bottom:8px}
+.aud-toggle button{border:none;background:none;font-family:var(--sans);font-size:14px;font-weight:600;color:var(--mute);padding:9px 20px;border-radius:999px;cursor:pointer;transition:all .15s}
+.aud-toggle button.active{background:var(--midnight);color:white}
+.aud-toggle button:not(.active):hover{color:var(--coral)}
+
+.aud-panel{display:none}
+.aud-panel.show{display:block;animation:fadeUp .35s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* step flow */
+.flow{max-width:880px;margin:0 auto;padding:20px 28px 30px}
+.flow-intro{font-size:17px;color:var(--ink);line-height:1.7;margin-bottom:36px;max-width:680px}
+.flow-intro strong{color:var(--midnight);font-weight:600}
+.steps{position:relative;margin-left:6px}
+.steps::before{content:'';position:absolute;left:19px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--coral),var(--teal))}
+.step{position:relative;padding:0 0 30px 60px;min-height:48px}
+.step:last-child{padding-bottom:0}
+.step-num{position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:white;border:2px solid var(--coral);color:var(--coral);font-family:var(--serif);font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center;z-index:1}
+.step-t{font-family:var(--serif);font-weight:700;font-size:21px;color:var(--midnight);letter-spacing:-0.4px;margin-bottom:6px;line-height:1.2}
+.step-d{font-size:15px;color:var(--ink);line-height:1.65}
+.step-d strong{color:var(--midnight);font-weight:600}
+
+/* highlight callout */
+.callout{display:flex;gap:14px;align-items:flex-start;background:white;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:0 14px 14px 0;padding:20px 22px;margin:30px 0}
+.callout.coral{border-left-color:var(--coral)}
+.callout-ic{font-size:24px;line-height:1;flex-shrink:0}
+.callout-t{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--midnight);margin-bottom:4px}
+.callout-d{font-size:14px;color:var(--ink);line-height:1.6}
+
+/* badge legend */
+.legend{max-width:880px;margin:0 auto;padding:10px 28px 20px}
+.legend-row{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+.legend-row:last-child{border-bottom:none}
+.vbadge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;padding:5px 12px;border-radius:30px;white-space:nowrap;flex-shrink:0}
+.vbadge.own{background:rgba(91,174,138,.14);color:#2F7D5C}
+.vbadge.res{background:rgba(14,165,164,.14);color:#0B7E7D}
+.vbadge.held{background:rgba(255,122,89,.14);color:#C2502F}
+.vbadge.pending{background:rgba(107,122,137,.14);color:#5A6876}
+.legend-txt{font-size:14px;color:var(--ink);line-height:1.6}
+.legend-txt b{color:var(--midnight)}
+
+/* FOOTER */
+footer{background:var(--midnight);color:#9ba8bd;padding:50px 28px 28px}
+.foot-inner{max-width:1080px;margin:0 auto}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px;padding-bottom:26px;border-bottom:1px solid #1f3147}
+.foot-logo{font-family:var(--serif);font-weight:900;font-size:24px;color:white;letter-spacing:-0.3px;margin-bottom:6px}
+.foot-logo em{color:var(--coral);font-style:normal}
+.foot-tag{font-size:13px;max-width:340px}
+.foot-cols{display:flex;gap:48px;flex-wrap:wrap}
+.foot-col h4{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1.5px;color:#6b7a93;font-weight:600;margin-bottom:10px}
+.foot-col a{display:block;color:#9ba8bd;text-decoration:none;font-size:13px;margin-bottom:6px}
+.foot-col a:hover{color:var(--coral)}
+.foot-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#6b7a93}
+</style>
+<meta name="theme-color" content="#FFF8F0">
+<style id="rf-skip-style">.rf-skip{position:absolute;left:-9999px;top:0;background:#1A2B3A;color:#fff;padding:10px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 8px 0;z-index:99999}.rf-skip:focus{left:0}</style>
+<style>
+/* Standardized dropdown nav */
+.nav-dropdown{position:relative}
+.nav-dropdown-btn{background:none;border:none;font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:4px}
+.nav-dropdown-btn:hover{color:var(--coral)}
+.nav-dropdown-btn[aria-expanded="true"]{color:var(--coral)}
+.nav-dropdown-btn .caret{font-size:10px;line-height:1;transition:transform 0.15s}
+.nav-dropdown-btn[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(11,29,46,.12);padding:14px;min-width:520px;display:none;z-index:200}
+.nav-dropdown-menu.open{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.nav-dropdown-menu a{display:block;padding:10px 12px;border-radius:8px;font-size:13px;color:var(--ink);font-weight:500;line-height:1.3;text-decoration:none}
+.nav-dropdown-menu a:hover{background:var(--cream);color:var(--coral)}
+.nav-dropdown-menu a strong{display:block;font-family:var(--serif);font-size:15px;font-weight:600;color:var(--midnight);margin-bottom:2px}
+.nav-dropdown-menu a:hover strong{color:var(--coral)}
+.nav-dropdown-menu a .sub{font-size:11px;color:var(--mute);font-family:var(--mono);letter-spacing:0.5px;text-transform:uppercase}
+.nav-dropdown-menu .all-charts{grid-column:1/-1;border-top:1px solid var(--line);margin-top:8px;padding-top:12px;text-align:center}
+.nav-dropdown-menu .all-charts a{background:var(--cream);color:var(--coral);font-weight:600;text-align:center;padding:10px}
+.nav-dropdown-menu .all-charts a:hover{background:var(--coral);color:white}
+@media (max-width:768px){
+  .nav-dropdown-menu{position:fixed;top:auto;bottom:0;left:0;right:0;transform:none;border-radius:14px 14px 0 0;min-width:0;max-height:70vh;overflow-y:auto;padding:20px}
+  .nav-dropdown-menu.open{grid-template-columns:1fr}
+}
+</style>
+<script>
+// Close dropdown when clicking outside
+document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.nav-dropdown-menu.open').forEach(function(menu){
+      if(!menu.parentElement.contains(e.target)){
+        menu.classList.remove('open');
+        menu.previousElementSibling.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+});
+
+// Audience toggle (renter/buyer vs owner)
+function setAud(which){
+  var isGuest = which === 'guest';
+  document.getElementById('panel-guest').classList.toggle('show', isGuest);
+  document.getElementById('panel-owner').classList.toggle('show', !isGuest);
+  var tg = document.getElementById('tab-guest'), to = document.getElementById('tab-owner');
+  tg.classList.toggle('active', isGuest); to.classList.toggle('active', !isGuest);
+  tg.setAttribute('aria-selected', isGuest); to.setAttribute('aria-selected', !isGuest);
+  if(history.replaceState) history.replaceState(null,'', isGuest?'#renting':'#listing');
+}
+// Honor deep links (#listing opens the owner view)
+document.addEventListener('DOMContentLoaded', function(){
+  var h = (location.hash||'').toLowerCase();
+  if(h.indexOf('list')>-1 || h.indexOf('owner')>-1 || h.indexOf('sell')>-1) setAud('owner');
+});
+</script>
+</head>
+<body>
+<a href="#main-content" class="rf-skip">Skip to main content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo">Resort<em>Flips</em></a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+      <button class="nav-dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.classList.toggle('open');event.stopPropagation();">Charts <span class="caret">▾</span></button>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="/marriott-points-chart.html"><strong>Marriott Abound</strong><span class="sub">72 resorts</span></a>
+        <a href="/dvc-points-chart.html"><strong>Disney Vacation Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/staroptions-chart.html"><strong>Vistana StarOptions</strong><span class="sub">28 resorts</span></a>
+        <a href="/hyatt-points-chart.html"><strong>Hyatt Residence Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/hgvc-points-chart.html"><strong>Hilton HGVC</strong><span class="sub">14 resorts</span></a>
+        <a href="/wyndham-points-chart.html"><strong>Club Wyndham</strong><span class="sub">12 + tiers</span></a>
+        <a href="/worldmark-points-chart.html"><strong>WorldMark</strong><span class="sub">Red/White/Blue</span></a>
+        <a href="/diamond-hgv-max-chart.html"><strong>Diamond / HGV Max</strong><span class="sub">9 collections</span></a>
+        <a href="/embarc-points-chart.html"><strong>Embarc Resorts</strong><span class="sub">9 of 9</span></a>
+        <a href="/four-seasons-chart.html"><strong>Four Seasons RC</strong><span class="sub">Fractional</span></a>
+        <a href="/montage-residences-chart.html"><strong>Montage</strong><span class="sub">Fractional</span></a>
+        <a href="/westin-whistler-chart.html"><strong>Westin Whistler</strong><span class="sub">Phase 2</span></a>
+        <div class="all-charts"><a href="/charts.html">View All Charts →</a></div>
+      </div>
+    </div>
+      <a href="/rentals.html">Rentals</a>
+      <a href="/deal-analyzer.html">Deal Analyzer</a>
+      <a href="/how-verification-works.html" style="color:var(--coral)">How Verification Works</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<section id="main-content" class="hero">
+  <span class="eyebrow">Trust &amp; Safety</span>
+  <h1>Verified before money moves. <em>Held until you arrive.</em></h1>
+  <p class="lead">Every listing on ResortFlips is verified, and every rental payment is held securely until the guest checks in. Here's exactly how it works — whether you're booking a stay, buying a week, or listing your own.</p>
+</section>
+
+<section class="flow" style="padding-top:30px">
+  <div class="aud-toggle" role="tablist" aria-label="Choose your view">
+    <button id="tab-guest" class="active" role="tab" aria-selected="true" onclick="setAud('guest')">I'm renting or buying</button>
+    <button id="tab-owner" role="tab" aria-selected="false" onclick="setAud('owner')">I'm listing</button>
+  </div>
+</section>
+
+<!-- ============ GUEST / BUYER PANEL ============ -->
+<div id="panel-guest" class="aud-panel show">
+
+  <section class="flow">
+    <p class="flow-intro">When you rent or buy through ResortFlips, you never wire money to a stranger and hope for the best. We verify the listing is real, confirm it with the resort, and <strong>hold your payment until your stay is secured</strong>. If something doesn't check out, you're refunded.</p>
+
+    <div class="pillars-head" style="text-align:left;margin-bottom:24px">
+      <h2 style="font-size:28px">Renting a week</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-t">You find a verified listing</div>
+        <div class="step-d">Every rental shows what's been confirmed. A <span class="vbadge res">✓ Reservation Verified</span> badge means we've matched the booking to the resort's records — the confirmation number and the name on file.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-t">You book — and we confirm with the resort</div>
+        <div class="step-d">Before your card is charged, we contact the resort directly to confirm the reservation exists, covers your dates, and can be transferred to your name.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-t">Your payment is held — not handed over</div>
+        <div class="step-d">Your payment is held securely through our payment processor. <strong>The owner does not get paid yet.</strong> The money sits protected while the reservation is put in your name.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-t">The owner adds your name to the reservation</div>
+        <div class="step-d">Within 48 hours of booking, the owner updates the reservation to show you as the guest. You can call the resort yourself to confirm your name is on it.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-t">You check in — then the owner gets paid</div>
+        <div class="step-d">Funds are released to the owner <strong>24–48 hours after you successfully check in</strong>. If the reservation isn't honored at the front desk, you get a full refund and we pursue the owner directly.</div>
+      </div>
+    </div>
+
+    <div class="callout coral">
+      <div class="callout-ic">🔒</div>
+      <div>
+        <div class="callout-t">Your money is held until 24–48 hours after check-in</div>
+        <div class="callout-d">This is the core of how we protect renters. The owner is only paid once you're actually in the unit — so a no-show reservation never costs you anything.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow" style="padding-top:0">
+    <div class="pillars-head" style="text-align:left;margin-bottom:24px">
+      <h2 style="font-size:28px">Buying a week (resale)</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-t">The listing is ownership-verified</div>
+        <div class="step-d">An <span class="vbadge own">✓ Ownership Verified</span> badge means the seller has provided proof of ownership — a deed or recent maintenance-fee statement — and attested that fees are current with no liens.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-t">You make an offer, funds go to escrow</div>
+        <div class="step-d">When you agree on a price, your funds are held by a neutral closing agent — never paid directly to the seller before the transfer is done.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-t">A clean-title check confirms the transfer</div>
+        <div class="step-d">At closing, the resort issues an <strong>estoppel letter</strong> confirming exactly what's owned, that fees are current, and that nothing is owed. This is the document that guarantees a clean transfer.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-t">Ownership records — then the seller is paid</div>
+        <div class="step-d">Funds release to the seller only once the deed records or the club confirms the ownership has transferred into your name.</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-ic">📋</div>
+      <div>
+        <div class="callout-t">Why sales and rentals are verified differently</div>
+        <div class="callout-d">A rental is about one reservation — so we verify the booking. A sale transfers ownership permanently — so we verify the ownership itself and that it's clean to transfer. Different risk, different check.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="legend">
+    <div class="pillars-head" style="text-align:left;margin-bottom:8px">
+      <h2 style="font-size:24px">What the badges mean</h2>
+    </div>
+    <div class="legend-row">
+      <span class="vbadge res">✓ Reservation Verified</span>
+      <div class="legend-txt"><b>The booking is real and confirmed with the resort.</b> We've matched the confirmation number and the name on the reservation against the resort's records.</div>
+    </div>
+    <div class="legend-row">
+      <span class="vbadge held">🔒 Funds Held to Check-in</span>
+      <div class="legend-txt"><b>Your payment is protected until you arrive.</b> The owner is only paid 24–48 hours after you successfully check in.</div>
+    </div>
+    <div class="legend-row">
+      <span class="vbadge own">✓ Ownership Verified</span>
+      <div class="legend-txt"><b>The seller owns the week and it's clean to transfer.</b> Confirmed against ownership documents and resort records, with fees current and no liens.</div>
+    </div>
+    <div class="legend-row">
+      <span class="vbadge pending">⏳ Awaiting Reservation</span>
+      <div class="legend-txt"><b>A points or floating week that isn't booked yet.</b> You can see it, but it can't be booked until the owner reserves specific dates and we verify them.</div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ OWNER PANEL ============ -->
+<div id="panel-owner" class="aud-panel">
+
+  <section class="flow">
+    <p class="flow-intro">Listing on ResortFlips is built to be low-effort and honest. You don't pay anything to list during launch, and verification is designed around what you actually have — a confirmed week, points, or a floating week. Here's what's required and what to expect.</p>
+
+    <div class="pillars-head" style="text-align:left;margin-bottom:24px">
+      <h2 style="font-size:28px">Listing a rental</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-t">Tell us about your reservation</div>
+        <div class="step-d">If you have a <strong>confirmed week</strong>, you provide the name on the reservation and the confirmation number. If you're listing <strong>points or a floating week</strong> you haven't booked yet, you can still list — see step 2.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-t">Points &amp; float list as "Awaiting Reservation"</div>
+        <div class="step-d">You can't rent out a week that doesn't exist yet, so points and floating listings go live as <span class="vbadge pending">⏳ Awaiting Reservation</span>. Renters can express interest, but booking unlocks only after you reserve specific dates and add your confirmation number.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-t">We verify it with the resort at booking</div>
+        <div class="step-d">When a guest books, we confirm your reservation directly with the resort. Once it checks out, your listing carries the <span class="vbadge res">✓ Reservation Verified</span> badge.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-t">Add the guest's name within 48 hours</div>
+        <div class="step-d">After a booking, you update the reservation to add the guest's name. They'll confirm it with the resort.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-t">You're paid after the guest checks in</div>
+        <div class="step-d">The guest's payment is held securely and released to you <strong>24–48 hours after they check in</strong>. This is what lets renters book with confidence — which means more bookings for you.</div>
+      </div>
+    </div>
+
+    <div class="callout coral">
+      <div class="callout-ic">💡</div>
+      <div>
+        <div class="callout-t">Why we hold funds until check-in</div>
+        <div class="callout-d">It's the single biggest reason renters trust owner-direct listings over sketchy classifieds. The hold protects them — and a marketplace renters trust is one where your listings actually sell.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow" style="padding-top:0">
+    <div class="pillars-head" style="text-align:left;margin-bottom:24px">
+      <h2 style="font-size:28px">Listing a week for sale</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-t">Upload proof of ownership</div>
+        <div class="step-d">A copy of your deed, a recent maintenance-fee statement, or an owner-portal screenshot showing your name. This earns the <span class="vbadge own">✓ Ownership Verified</span> badge once reviewed.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-t">Confirm your ownership is clean</div>
+        <div class="step-d">You attest that your maintenance fees are current and there are no unpaid special assessments or loans against the ownership. A week with arrears or an active loan can't transfer freely.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-t">We review, then your listing goes live</div>
+        <div class="step-d">Our team reviews your documents within 1–2 business days. Once approved, your listing publishes with its verification badge.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-t">Clean transfer is confirmed at closing</div>
+        <div class="step-d">When you have a buyer, the resort issues an estoppel letter confirming clean ownership before any funds are released to you. Buyer funds are held in escrow until the transfer records.</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-ic">🛡️</div>
+      <div>
+        <div class="callout-t">Verification protects you too</div>
+        <div class="callout-d">A verified listing gets significantly more inquiries — buyers and renters reward the trust signal. It also shields you from disputes, because the terms and the reservation are documented up front.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Ready when you are.</h2>
+    <p>Browse verified rentals, or list your week in minutes — free during our 90-day launch.</p>
+    <div class="cta-row">
+      <a href="/rentals.html" class="cta-btn cta-primary">Browse Rentals</a>
+      <a href="/" class="cta-btn cta-secondary">List Your Week</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo">Resort<em>Flips</em></div>
+        <div class="foot-tag">The Zillow of vacation ownership. Transparent. Expert. On your side. No Sales. Just Facts.</div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Major Charts</h4>
+          <a href="/marriott-points-chart.html">Marriott Abound</a>
+          <a href="/dvc-points-chart.html">DVC Points</a>
+          <a href="/staroptions-chart.html">Vistana StarOptions</a>
+          <a href="/hyatt-points-chart.html">Hyatt HRC</a>
+          <a href="/hgvc-points-chart.html">Hilton HGVC</a>
+          <a href="/wyndham-points-chart.html">Club Wyndham</a>
+          <a href="/charts.html"><strong>All 12 Charts →</strong></a>
+        </div>
+        <div class="foot-col">
+          <h4>Other Brands</h4>
+          <a href="/worldmark-points-chart.html">WorldMark</a>
+          <a href="/diamond-hgv-max-chart.html">Diamond/HGV Max</a>
+          <a href="/embarc-points-chart.html">Embarc</a>
+          <a href="/four-seasons-chart.html">Four Seasons RC</a>
+          <a href="/montage-residences-chart.html">Montage Residences</a>
+          <a href="/westin-whistler-chart.html">Westin Whistler</a>
+        </div>
+        <div class="foot-col">
+          <h4>Tools</h4>
+          <a href="/rentals.html">Search Rentals</a>
+          <a href="/deal-analyzer.html">Deal Analyzer</a>
+          <a href="/compare.html">Compare Two</a>
+          <a href="/point-converter.html">Point Converter</a>
+          <a href="/brands.html">Brand Directory</a>
+          <a href="/glossary.html">Glossary</a>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <a href="/about.html">About</a>
+          <a href="/how-verification-works.html">How Verification Works</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+      </div>
+    <div class="foot-bottom">
+      <span>© 2026 ResortFlips. All rights reserved.</span>
+      <span>Indigo Property Services LLC · Apex, NC</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Google Analytics 4 (consent-gated) ============ -->
+<!-- Replace G-5YG3Z1YV5Z with your real GA4 Measurement ID after creating the property. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5YG3Z1YV5Z"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+// Default to DENIED — load actual tracking only after user consents.
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied'
+});
+
+gtag('config', 'G-5YG3Z1YV5Z', {
+  'anonymize_ip': true,
+  'allow_google_signals': false,
+  'allow_ad_personalization_signals': false
+});
+
+// Check stored consent on every page load
+(function(){
+  var c = localStorage.getItem('rf_consent');
+  if(c === 'granted'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
+</script>
+
+<!-- ============ Cookie consent banner ============ -->
+<style id="rf-consent-style">
+#rf-consent{
+  position:fixed;bottom:20px;left:20px;right:20px;max-width:560px;margin-left:auto;
+  background:#0B1D2E;color:#FFF8F0;border-radius:14px;padding:18px 20px;
+  box-shadow:0 24px 48px -16px rgba(0,0,0,0.4);
+  font-family:'Inter',-apple-system,sans-serif;font-size:13.5px;line-height:1.5;
+  z-index:9999;display:none;
+}
+#rf-consent.show{display:block;animation:rfconsent 0.3s ease}
+@keyframes rfconsent{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+#rf-consent strong{color:#fff;font-weight:600}
+#rf-consent a{color:#FF7A59;font-weight:600;text-decoration:none}
+#rf-consent a:hover{text-decoration:underline}
+#rf-consent-buttons{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+#rf-consent button{
+  border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;
+  padding:9px 16px;border-radius:8px;transition:opacity 0.15s;
+}
+#rf-consent .rf-accept{background:#FF7A59;color:#fff}
+#rf-consent .rf-accept:hover{opacity:0.9}
+#rf-consent .rf-decline{background:transparent;color:#9ba8bd;border:1px solid #1f3147}
+#rf-consent .rf-decline:hover{color:#fff;border-color:#fff}
+</style>
+<div id="rf-consent" role="dialog" aria-live="polite" aria-label="Cookie preferences">
+  <strong>We use cookies for analytics.</strong>
+  <p style="margin:6px 0 0">We use Google Analytics to understand how visitors find and use ResortFlips. We do not sell your data or use advertising trackers. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+  <div id="rf-consent-buttons">
+    <button class="rf-accept" onclick="rfConsent(true)">Accept analytics</button>
+    <button class="rf-decline" onclick="rfConsent(false)">Decline</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem('rf_consent')){
+    setTimeout(function(){
+      var el = document.getElementById('rf-consent');
+      if(el) el.classList.add('show');
+    }, 800);
+  }
+})();
+function rfConsent(grant){
+  localStorage.setItem('rf_consent', grant ? 'granted' : 'declined');
+  if(grant && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+  document.getElementById('rf-consent').classList.remove('show');
+}
+</script>
+
+</body>
+</html>

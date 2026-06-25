@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rental Agreement — Review & Sign | ResortFlips</title>
+<meta name="description" content="Review and electronically sign your ResortFlips rental agreement. Details auto-filled from your booking; one click to accept.">
+<meta name="robots" content="noindex, follow">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#FF7A59">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="ResortFlips">
+<meta name="msapplication-TileColor" content="#FF7A59">
+
+<link rel="canonical" href="https://resortflips.com/rental-agreement.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ResortFlips">
+<meta property="og:title" content="ResortFlips Rental Agreement">
+<meta property="og:description" content="Review and electronically sign your ResortFlips rental agreement.">
+<meta property="og:url" content="https://resortflips.com/rental-agreement.html">
+<meta property="og:image" content="https://resortflips.com/og/og-home.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --midnight:#0B1D2E; --ink:#1A2B3A; --coral:#FF7A59; --teal:#0EA5A4; --gold:#FFB627;
+  --paper:#FFF8F0; --cream:#FFEFDB; --line:rgba(26,43,58,.08); --mute:#6B7A89;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',-apple-system,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--midnight);text-decoration:none;letter-spacing:-0.5px}
+.logo em{color:var(--coral);font-style:normal}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+.nav-links a:hover{color:var(--coral)}
+.nav-cta{background:var(--midnight);color:white;padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600}
+.nav-cta:hover{background:var(--coral)}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+
+/* HERO */
+.hero{padding:80px 28px 40px;max-width:1080px;margin:0 auto}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--coral);border:1px solid var(--coral);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+h1{font-family:var(--serif);font-weight:900;font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-2px;color:var(--midnight);margin-bottom:18px;max-width:900px}
+h1 em{font-style:italic;color:var(--coral);font-weight:500}
+.lead{font-size:20px;color:var(--mute);max-width:640px;line-height:1.55}
+
+/* STORY SECTION */
+.story{max-width:760px;margin:0 auto;padding:30px 28px 50px}
+.story-block{margin-bottom:54px}
+.story-block:last-child{margin-bottom:0}
+.story-block h2{font-family:var(--serif);font-weight:700;font-size:34px;color:var(--midnight);letter-spacing:-0.8px;line-height:1.1;margin-bottom:16px}
+.story-block h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.story-block p{font-size:17px;color:var(--ink);margin-bottom:16px;line-height:1.7}
+.story-block p:last-child{margin-bottom:0}
+.story-block strong{color:var(--midnight);font-weight:600}
+
+/* PULL QUOTE */
+.pull-quote{
+  margin:36px 0;padding:28px 32px;
+  background:white;border-left:4px solid var(--coral);border-radius:0 14px 14px 0;
+  font-family:var(--serif);font-size:22px;font-weight:500;font-style:italic;
+  color:var(--midnight);line-height:1.45;letter-spacing:-0.3px;
+}
+.pull-quote::before{content:'"';color:var(--coral);font-size:60px;line-height:0.5;vertical-align:-0.2em;margin-right:4px}
+
+/* PILLARS */
+.pillars{max-width:1080px;margin:0 auto;padding:40px 28px 60px}
+.pillars-head{text-align:center;margin-bottom:40px}
+.pillars-head h2{font-family:var(--serif);font-weight:700;font-size:38px;color:var(--midnight);letter-spacing:-1px;margin-bottom:10px}
+.pillars-head h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.pillars-head .sub{color:var(--mute);font-size:16px;max-width:560px;margin:0 auto}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:760px){.pillar-grid{grid-template-columns:1fr}}
+.pillar{
+  background:white;border:1px solid var(--line);border-radius:18px;
+  padding:28px;transition:all 0.2s;
+}
+.pillar:hover{transform:translateY(-2px);box-shadow:0 16px 40px -16px rgba(11,29,46,0.18);border-color:#d6cdb8}
+.pillar-num{
+  font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:2px;
+  color:var(--coral);font-weight:600;margin-bottom:14px;
+}
+.pillar h3{
+  font-family:var(--serif);font-weight:700;font-size:22px;color:var(--midnight);
+  letter-spacing:-0.4px;margin-bottom:10px;line-height:1.2;
+}
+.pillar p{font-size:14.5px;color:var(--ink);line-height:1.6}
+
+/* FOUNDER */
+.founder{background:white;padding:60px 28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.founder-inner{max-width:880px;margin:0 auto;display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start}
+@media(max-width:680px){.founder-inner{grid-template-columns:1fr;gap:24px}}
+.founder-card{
+  background:linear-gradient(135deg,var(--midnight),#15314D);
+  border-radius:24px;padding:32px 24px;text-align:center;color:white;
+  position:sticky;top:90px;
+}
+@media(max-width:680px){.founder-card{position:static}}
+.founder-mark{
+  width:80px;height:80px;border-radius:18px;
+  background:linear-gradient(135deg,var(--coral),#F5A07B);
+  font-family:var(--serif);font-weight:900;font-size:42px;color:white;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;letter-spacing:-2px;
+}
+.founder-name{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-0.3px}
+.founder-title{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#9ba8bd;margin-top:6px}
+.founder-stats{display:flex;justify-content:space-around;margin-top:22px;padding-top:18px;border-top:1px solid #1f3147}
+.founder-stat-num{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--coral);line-height:1}
+.founder-stat-lbl{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:1px;color:#9ba8bd;margin-top:4px}
+
+.founder-bio h2{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--midnight);letter-spacing:-0.6px;margin-bottom:14px}
+.founder-bio h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.founder-bio p{font-size:16px;color:var(--ink);margin-bottom:14px;line-height:1.65}
+.founder-bio .signature{
+  font-family:var(--serif);font-style:italic;font-size:20px;color:var(--midnight);
+  margin-top:24px;padding-top:18px;border-top:1px solid var(--line);
+}
+
+/* CTA */
+.cta-section{background:linear-gradient(135deg,var(--midnight),#15314D);color:white;padding:70px 28px}
+.cta-inner{max-width:760px;margin:0 auto;text-align:center}
+.cta-section h2{font-family:var(--serif);font-weight:700;font-size:42px;letter-spacing:-1px;margin-bottom:14px;line-height:1.1}
+.cta-section h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.cta-section p{font-size:17px;color:#9ba8bd;margin-bottom:28px;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-btn{padding:14px 28px;border-radius:999px;font-family:var(--sans);font-size:15px;font-weight:600;text-decoration:none;transition:all 0.15s}
+.cta-primary{background:var(--coral);color:white}
+.cta-primary:hover{background:white;color:var(--midnight)}
+.cta-secondary{background:transparent;color:white;border:1.5px solid #1f3147}
+.cta-secondary:hover{border-color:var(--coral);color:var(--coral)}
+
+/* ===== SIGNING PAGE ===== */
+.sign-wrap{max-width:880px;margin:0 auto;padding:10px 28px 60px}
+
+/* booking summary card */
+.bk-card{background:white;border:1px solid var(--line);border-radius:18px;padding:0;overflow:hidden;margin-bottom:28px;box-shadow:0 10px 30px rgba(11,29,46,.05)}
+.bk-head{background:linear-gradient(135deg,var(--midnight),#15314D);color:white;padding:20px 26px}
+.bk-head h2{font-family:var(--serif);font-size:20px;font-weight:700;margin:0 0 2px}
+.bk-head .bk-sub{font-size:13px;color:#fff;opacity:.85}
+.bk-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+@media(max-width:600px){.bk-grid{grid-template-columns:1fr}}
+.bk-cell{background:white;padding:14px 18px}
+.bk-k{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--mute);margin-bottom:3px}
+.bk-v{font-size:15px;color:var(--ink);font-weight:600}
+.bk-v.coral{color:var(--coral)}
+
+/* demo controls */
+.demo-ctrl{background:#FFF3E9;border:1px dashed var(--coral);border-radius:14px;padding:16px 18px;margin-bottom:24px}
+.demo-ctrl summary{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--coral);font-weight:600;cursor:pointer}
+.demo-ctrl .dc-note{font-size:12.5px;color:var(--mute);margin:8px 0 14px;line-height:1.5}
+.dc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:600px){.dc-grid{grid-template-columns:1fr}}
+.dc-field label{display:block;font-size:11px;color:var(--mute);margin-bottom:3px;font-weight:600}
+.dc-field input{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:13px;color:var(--ink)}
+.dc-field input:focus{outline:none;border-color:var(--coral)}
+
+/* agreement body */
+.agree{background:white;border:1px solid var(--line);border-radius:16px;padding:30px 34px;margin-bottom:26px;max-height:420px;overflow-y:auto;position:relative}
+.agree::-webkit-scrollbar{width:10px}
+.agree::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px}
+.agree h3{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--midnight);margin:20px 0 8px}
+.agree h3:first-child{margin-top:0}
+.agree p{font-size:13.5px;color:var(--ink);line-height:1.65;margin-bottom:11px}
+.agree .mf{color:var(--coral);font-weight:600;background:rgba(255,122,89,.08);padding:0 4px;border-radius:4px}
+.agree strong{color:var(--midnight)}
+.scroll-hint{text-align:center;font-size:12px;color:var(--mute);margin:-14px 0 22px;font-style:italic}
+
+/* signature panel */
+.sig-panel{background:white;border:2px solid var(--coral);border-radius:18px;padding:26px 28px;margin-bottom:20px}
+.sig-panel.locked{border-color:var(--line);opacity:.55;pointer-events:none}
+.sig-title{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--midnight);margin-bottom:6px}
+.sig-desc{font-size:13.5px;color:var(--mute);line-height:1.6;margin-bottom:18px}
+.sig-field{margin-bottom:16px}
+.sig-field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.sig-field input[type=text]{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:'Fraunces',Georgia,serif;font-size:20px;color:var(--midnight)}
+.sig-field input[type=text]:focus{outline:none;border-color:var(--coral)}
+.sig-field .hint{font-size:11.5px;color:var(--mute);margin-top:5px}
+.sig-field .mismatch{color:#C2502F}
+.sig-check{display:flex;gap:11px;align-items:flex-start;font-size:13.5px;line-height:1.55;color:var(--ink);cursor:pointer;margin-bottom:20px}
+.sig-check input{margin-top:2px;width:18px;height:18px;flex-shrink:0;accent-color:var(--coral)}
+.sig-btn{width:100%;padding:15px;border:none;border-radius:12px;background:var(--coral);color:white;font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;transition:all .15s}
+.sig-btn:hover:not(:disabled){background:var(--midnight)}
+.sig-btn:disabled{background:#E5DDD0;color:#A89F90;cursor:not-allowed}
+.sig-legal{font-size:11.5px;color:var(--mute);line-height:1.5;margin-top:14px;text-align:center}
+
+/* accepted state */
+.accepted{display:none;background:linear-gradient(135deg,#F0FAF4,#E3F5EA);border:1px solid rgba(91,174,138,.4);border-radius:18px;padding:30px 32px;margin-bottom:20px}
+.accepted.show{display:block;animation:fadeUp .4s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.acc-badge{display:inline-flex;align-items:center;gap:7px;background:#2F7D5C;color:white;font-size:13px;font-weight:700;padding:7px 16px;border-radius:30px;margin-bottom:16px}
+.acc-title{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--midnight);margin-bottom:8px}
+.acc-desc{font-size:14px;color:var(--ink);line-height:1.6;margin-bottom:20px}
+.acc-record{background:white;border:1px solid rgba(91,174,138,.3);border-radius:12px;padding:18px 20px}
+.acc-record h4{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--mute);margin-bottom:12px;font-weight:600}
+.acc-row{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+.acc-row:last-child{border-bottom:none}
+.acc-row .k{color:var(--mute)}
+.acc-row .v{color:var(--ink);font-weight:600;font-family:var(--mono);font-size:12px;text-align:right}
+.acc-stored{font-size:11.5px;color:var(--mute);font-style:italic;margin-top:14px;line-height:1.5}
+.acc-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.acc-btn{padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;border:none;font-family:inherit}
+.acc-btn.primary{background:var(--midnight);color:white}
+.acc-btn.primary:hover{background:var(--coral)}
+.acc-btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.acc-btn.ghost:hover{border-color:var(--coral);color:var(--coral)}
+
+/* role toggle (demo) */
+.role-tabs{display:inline-flex;background:white;border:1px solid var(--line);border-radius:999px;padding:5px;gap:4px;margin-bottom:20px}
+.role-tabs button{border:none;background:none;font-family:inherit;font-size:13px;font-weight:600;color:var(--mute);padding:8px 18px;border-radius:999px;cursor:pointer}
+.role-tabs button.active{background:var(--midnight);color:white}
+
+/* FOOTER */
+/* FOOTER */
+footer{background:var(--midnight);color:#9ba8bd;padding:50px 28px 28px}
+.foot-inner{max-width:1080px;margin:0 auto}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px;padding-bottom:26px;border-bottom:1px solid #1f3147}
+.foot-logo{font-family:var(--serif);font-weight:900;font-size:24px;color:white;letter-spacing:-0.3px;margin-bottom:6px}
+.foot-logo em{color:var(--coral);font-style:normal}
+.foot-tag{font-size:13px;max-width:340px}
+.foot-cols{display:flex;gap:48px;flex-wrap:wrap}
+.foot-col h4{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1.5px;color:#6b7a93;font-weight:600;margin-bottom:10px}
+.foot-col a{display:block;color:#9ba8bd;text-decoration:none;font-size:13px;margin-bottom:6px}
+.foot-col a:hover{color:var(--coral)}
+.foot-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#6b7a93}
+</style>
+<meta name="theme-color" content="#FFF8F0">
+<style id="rf-skip-style">.rf-skip{position:absolute;left:-9999px;top:0;background:#1A2B3A;color:#fff;padding:10px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 8px 0;z-index:99999}.rf-skip:focus{left:0}</style>
+<style>
+/* Standardized dropdown nav */
+.nav-dropdown{position:relative}
+.nav-dropdown-btn{background:none;border:none;font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:4px}
+.nav-dropdown-btn:hover{color:var(--coral)}
+.nav-dropdown-btn[aria-expanded="true"]{color:var(--coral)}
+.nav-dropdown-btn .caret{font-size:10px;line-height:1;transition:transform 0.15s}
+.nav-dropdown-btn[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(11,29,46,.12);padding:14px;min-width:520px;display:none;z-index:200}
+.nav-dropdown-menu.open{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.nav-dropdown-menu a{display:block;padding:10px 12px;border-radius:8px;font-size:13px;color:var(--ink);font-weight:500;line-height:1.3;text-decoration:none}
+.nav-dropdown-menu a:hover{background:var(--cream);color:var(--coral)}
+.nav-dropdown-menu a strong{display:block;font-family:var(--serif);font-size:15px;font-weight:600;color:var(--midnight);margin-bottom:2px}
+.nav-dropdown-menu a:hover strong{color:var(--coral)}
+.nav-dropdown-menu a .sub{font-size:11px;color:var(--mute);font-family:var(--mono);letter-spacing:0.5px;text-transform:uppercase}
+.nav-dropdown-menu .all-charts{grid-column:1/-1;border-top:1px solid var(--line);margin-top:8px;padding-top:12px;text-align:center}
+.nav-dropdown-menu .all-charts a{background:var(--cream);color:var(--coral);font-weight:600;text-align:center;padding:10px}
+.nav-dropdown-menu .all-charts a:hover{background:var(--coral);color:white}
+@media (max-width:768px){
+  .nav-dropdown-menu{position:fixed;top:auto;bottom:0;left:0;right:0;transform:none;border-radius:14px 14px 0 0;min-width:0;max-height:70vh;overflow-y:auto;padding:20px}
+  .nav-dropdown-menu.open{grid-template-columns:1fr}
+}
+</style>
+<script>
+// Close dropdown when clicking outside
+document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.nav-dropdown-menu.open').forEach(function(menu){
+      if(!menu.parentElement.contains(e.target)){
+        menu.classList.remove('open');
+        menu.previousElementSibling.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+});
+
+// ===== Rental agreement signing flow =====
+var booking = {
+  owner:'Daniel Reyes', renter:'Jordan Mitchell',
+  resort:"Marriott's Aruba Ocean Club — 2BR Ocean Front",
+  conf:'MAR-80421-50293', checkIn:'Mar 14, 2026', checkOut:'Mar 21, 2026',
+  price:'2,695', ref:'RF-2026-04417'
+};
+var role = 'renter'; // who is signing
+
+// Allow real data via URL params (?renter=...&owner=...&resort=...&conf=...&in=...&out=...&price=...&ref=...&role=...)
+(function(){
+  var q = new URLSearchParams(location.search);
+  var map = {renter:'renter',owner:'owner',resort:'resort',conf:'conf',price:'price',ref:'ref'};
+  Object.keys(map).forEach(function(k){ if(q.get(k)) booking[map[k]] = q.get(k); });
+  if(q.get('in')) booking.checkIn = q.get('in');
+  if(q.get('out')) booking.checkOut = q.get('out');
+  if(q.get('role')==='owner') role='owner';
+  // push any URL values back into the demo inputs so the panel stays in sync
+  setVal('f-owner',booking.owner); setVal('f-renter',booking.renter); setVal('f-resort',booking.resort);
+  setVal('f-conf',booking.conf); setVal('f-in',booking.checkIn); setVal('f-out',booking.checkOut);
+  setVal('f-price',booking.price); setVal('f-ref',booking.ref);
+})();
+
+function setVal(id,v){ var el=document.getElementById(id); if(el) el.value=v; }
+function setTxt(id,v){ var el=document.getElementById(id); if(el) el.textContent=v; }
+
+function render(){
+  var dates = booking.checkIn + ' – ' + booking.checkOut;
+  // booking summary
+  setTxt('bk-resort',booking.resort); setTxt('bk-ref',booking.ref);
+  setTxt('bk-renter',booking.renter); setTxt('bk-owner',booking.owner);
+  setTxt('bk-dates',dates); setTxt('bk-conf',booking.conf);
+  setTxt('bk-price','$'+booking.price);
+  // agreement merge fields
+  setTxt('a-owner',booking.owner); setTxt('a-renter',booking.renter);
+  setTxt('a-resort',booking.resort); setTxt('a-dates',dates);
+  setTxt('a-conf',booking.conf); setTxt('a-price','$'+booking.price);
+  // signature expected name
+  var expected = role==='renter' ? booking.renter : booking.owner;
+  setTxt('sig-expected',expected);
+  setTxt('sig-role-label', role==='renter'?'Renter':'Owner');
+  checkSig();
+}
+
+function syncDemo(){
+  booking.owner = (document.getElementById('f-owner').value||'').trim();
+  booking.renter = (document.getElementById('f-renter').value||'').trim();
+  booking.resort = (document.getElementById('f-resort').value||'').trim();
+  booking.conf = (document.getElementById('f-conf').value||'').trim();
+  booking.checkIn = (document.getElementById('f-in').value||'').trim();
+  booking.checkOut = (document.getElementById('f-out').value||'').trim();
+  booking.price = (document.getElementById('f-price').value||'').trim();
+  booking.ref = (document.getElementById('f-ref').value||'').trim();
+  render();
+}
+
+function setRole(r){
+  role = r;
+  document.getElementById('role-renter').classList.toggle('active', r==='renter');
+  document.getElementById('role-owner').classList.toggle('active', r==='owner');
+  document.getElementById('sigName').value='';
+  document.getElementById('sigAgree').checked=false;
+  render();
+}
+
+function checkSig(){
+  var expected = (role==='renter' ? booking.renter : booking.owner).trim().toLowerCase();
+  var typed = (document.getElementById('sigName').value||'').trim().toLowerCase();
+  var agreed = document.getElementById('sigAgree').checked;
+  var match = typed.length>1 && typed===expected;
+  var hint = document.getElementById('sigHint');
+  if(typed.length>1 && !match){
+    hint.classList.add('mismatch');
+    hint.innerHTML = 'Name must match <strong>'+(role==='renter'?booking.renter:booking.owner)+'</strong> exactly to sign.';
+  } else {
+    hint.classList.remove('mismatch');
+    hint.innerHTML = 'Expected: <strong id="sig-expected">'+(role==='renter'?booking.renter:booking.owner)+'</strong>';
+  }
+  document.getElementById('sigBtn').disabled = !(match && agreed);
+}
+
+function genId(){
+  var t = Date.now().toString(36).toUpperCase();
+  var r = Math.random().toString(36).slice(2,7).toUpperCase();
+  return 'RF-SIG-'+t+'-'+r;
+}
+
+function nowET(){
+  try{
+    return new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',dateStyle:'medium',timeStyle:'short'}).format(new Date())+' ET';
+  }catch(e){ return new Date().toLocaleString()+' ET'; }
+}
+
+function doSign(){
+  var name = document.getElementById('sigName').value.trim();
+  var id = genId();
+  setTxt('r-name', name);
+  setTxt('r-role', role==='renter'?'Renter':'Owner');
+  setTxt('r-time', nowET());
+  setTxt('r-ref', booking.ref);
+  setTxt('r-id', id);
+  setTxt('acc-firstname', name.split(' ')[0]);
+  document.getElementById('r-stored').textContent =
+    'In production, this record — typed name, timestamp, IP address, user account, booking reference, and the exact agreement version — is stored as the binding electronic signature under the E-SIGN Act.';
+  // hide signing UI, show accepted
+  document.getElementById('sigPanel').classList.add('locked');
+  document.getElementById('accepted').classList.add('show');
+  document.getElementById('accepted').scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+function resetSign(){
+  document.getElementById('sigName').value='';
+  document.getElementById('sigAgree').checked=false;
+  document.getElementById('sigPanel').classList.remove('locked');
+  document.getElementById('accepted').classList.remove('show');
+  checkSig();
+  document.getElementById('sigPanel').scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+document.addEventListener('DOMContentLoaded', render);
+</script>
+</head>
+<body>
+<a href="#main-content" class="rf-skip">Skip to main content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo">Resort<em>Flips</em></a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+      <button class="nav-dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.classList.toggle('open');event.stopPropagation();">Charts <span class="caret">▾</span></button>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="/marriott-points-chart.html"><strong>Marriott Abound</strong><span class="sub">72 resorts</span></a>
+        <a href="/dvc-points-chart.html"><strong>Disney Vacation Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/staroptions-chart.html"><strong>Vistana StarOptions</strong><span class="sub">28 resorts</span></a>
+        <a href="/hyatt-points-chart.html"><strong>Hyatt Residence Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/hgvc-points-chart.html"><strong>Hilton HGVC</strong><span class="sub">14 resorts</span></a>
+        <a href="/wyndham-points-chart.html"><strong>Club Wyndham</strong><span class="sub">12 + tiers</span></a>
+        <a href="/worldmark-points-chart.html"><strong>WorldMark</strong><span class="sub">Red/White/Blue</span></a>
+        <a href="/diamond-hgv-max-chart.html"><strong>Diamond / HGV Max</strong><span class="sub">9 collections</span></a>
+        <a href="/embarc-points-chart.html"><strong>Embarc Resorts</strong><span class="sub">9 of 9</span></a>
+        <a href="/four-seasons-chart.html"><strong>Four Seasons RC</strong><span class="sub">Fractional</span></a>
+        <a href="/montage-residences-chart.html"><strong>Montage</strong><span class="sub">Fractional</span></a>
+        <a href="/westin-whistler-chart.html"><strong>Westin Whistler</strong><span class="sub">Phase 2</span></a>
+        <div class="all-charts"><a href="/charts.html">View All Charts →</a></div>
+      </div>
+    </div>
+      <a href="/rentals.html">Rentals</a>
+      <a href="/deal-analyzer.html">Deal Analyzer</a>
+      <a href="/how-verification-works.html">How Verification Works</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<section id="main-content" class="hero" style="padding-bottom:24px">
+  <span class="eyebrow">Rental Agreement</span>
+  <h1>Review &amp; <em>sign.</em></h1>
+  <p class="lead">Your booking details are filled in below. Read the agreement, type your name to sign, and you're done — no printing, no scanning.</p>
+</section>
+
+<div class="sign-wrap">
+
+  <!-- DEMO controls: in production this data arrives from the booking; here you can edit it to see auto-fill -->
+  <details class="demo-ctrl">
+    <summary>⚙︎ Demo controls — edit booking data</summary>
+    <p class="dc-note">In the live site these fields are filled automatically from the confirmed booking (and via URL parameters). This panel is here only so you can see the auto-fill and signing flow work. It would not appear for a real renter.</p>
+    <div class="dc-grid">
+      <div class="dc-field"><label>Owner name</label><input id="f-owner" value="Daniel Reyes" oninput="syncDemo()"></div>
+      <div class="dc-field"><label>Renter name</label><input id="f-renter" value="Jordan Mitchell" oninput="syncDemo()"></div>
+      <div class="dc-field"><label>Resort / Unit</label><input id="f-resort" value="Marriott's Aruba Ocean Club — 2BR Ocean Front" oninput="syncDemo()"></div>
+      <div class="dc-field"><label>Confirmation #</label><input id="f-conf" value="MAR-80421-50293" oninput="syncDemo()"></div>
+      <div class="dc-field"><label>Check-in</label><input id="f-in" value="Mar 14, 2026" oninput="syncDemo()"></div>
+      <div class="dc-field"><label>Check-out</label><input id="f-out" value="Mar 21, 2026" oninput="syncDemo()"></div>
+      <div class="dc-field"><label>Rental price (USD)</label><input id="f-price" value="2,695" oninput="syncDemo()"></div>
+      <div class="dc-field"><label>Booking reference</label><input id="f-ref" value="RF-2026-04417" oninput="syncDemo()"></div>
+    </div>
+  </details>
+
+  <!-- BOOKING SUMMARY -->
+  <div class="bk-card">
+    <div class="bk-head">
+      <h2 id="bk-resort">Marriott's Aruba Ocean Club — 2BR Ocean Front</h2>
+      <div class="bk-sub">Booking reference <span id="bk-ref">RF-2026-04417</span></div>
+    </div>
+    <div class="bk-grid">
+      <div class="bk-cell"><div class="bk-k">Renter</div><div class="bk-v" id="bk-renter">Jordan Mitchell</div></div>
+      <div class="bk-cell"><div class="bk-k">Owner</div><div class="bk-v" id="bk-owner">Daniel Reyes</div></div>
+      <div class="bk-cell"><div class="bk-k">Rental period</div><div class="bk-v" id="bk-dates">Mar 14 – Mar 21, 2026</div></div>
+      <div class="bk-cell"><div class="bk-k">Resort confirmation #</div><div class="bk-v" id="bk-conf">MAR-80421-50293</div></div>
+      <div class="bk-cell"><div class="bk-k">Rental payment</div><div class="bk-v coral" id="bk-price">$2,695</div></div>
+      <div class="bk-cell"><div class="bk-k">Held until</div><div class="bk-v">24–48 hrs after check-in</div></div>
+    </div>
+  </div>
+
+  <!-- ROLE (demo) -->
+  <div style="text-align:center">
+    <div class="role-tabs">
+      <button id="role-renter" class="active" onclick="setRole('renter')">Signing as Renter</button>
+      <button id="role-owner" onclick="setRole('owner')">Signing as Owner</button>
+    </div>
+  </div>
+
+  <!-- AGREEMENT BODY -->
+  <div class="agree" id="agree">
+    <h3>Timeshare Rental Agreement</h3>
+    <p>This Rental Agreement is between <span class="mf" id="a-owner">Daniel Reyes</span> (“Owner”) and <span class="mf" id="a-renter">Jordan Mitchell</span> (“Renter”), in connection with a rental facilitated by Indigo Property Services LLC d/b/a ResortFlips (“ResortFlips”). ResortFlips provides the marketplace platform and is not a party to this Agreement, nor a real estate broker, escrow agent, or insurer.</p>
+
+    <h3>1. The Rental</h3>
+    <p>Owner agrees to provide, and Renter agrees to rent, the following: <span class="mf" id="a-resort">Marriott's Aruba Ocean Club — 2BR Ocean Front</span>, for the Rental Period <span class="mf" id="a-dates">Mar 14 – Mar 21, 2026</span> (all dates Eastern Time), under Resort confirmation number <span class="mf" id="a-conf">MAR-80421-50293</span>, for a total Rental Payment of <span class="mf" id="a-price">$2,695</span> plus a pass-through payment-processing fee disclosed at checkout.</p>
+
+    <h3>2. Verification &amp; Payment Protection</h3>
+    <p>Before Renter's payment is captured, ResortFlips confirms the reservation directly with the Resort. <strong>Renter's payment is then held by ResortFlips's payment processor and released to Owner only 24–48 hours after Renter checks in</strong> — protecting Renter against a reservation that is not honored at the front desk. If the reservation is not honored through no fault of Renter, Renter receives a full refund.</p>
+
+    <h3>3. Name on Reservation</h3>
+    <p>Owner shall change the name on the reservation to Renter's name <strong>within forty-eight (48) hours</strong> of this Agreement taking effect, and forward updated confirmation to ResortFlips. Renter is encouraged to confirm with the Resort that Renter's name appears on the reservation before travel. Owner shall not list, rent, or transfer the same reservation through any other channel.</p>
+
+    <h3>4. Renter Obligations</h3>
+    <p>Renter will comply with all Resort rules (occupancy limits, pet/smoking, noise, check-in/out times), is responsible for resort fees, lodging taxes, deposits, and optional-service charges imposed by the Resort, and for any damage beyond ordinary wear. Renter may not sublease or assign this Agreement without written consent of Owner and ResortFlips. On-site management may assign the specific physical unit at check-in provided it conforms to the type described above.</p>
+
+    <h3>5. Owner Obligations</h3>
+    <p>Owner represents the reservation is valid, in Owner's name (or Owner is authorized to designate Renter as occupant), corresponds to the dates and unit described, and that Owner is current on all maintenance fees and dues. Owner will not cancel or allow the reservation to lapse after this Agreement takes effect; if Owner does so, Owner is liable for Renter's and ResortFlips's costs of comparable re-accommodation.</p>
+
+    <h3>6. Cancellation</h3>
+    <p>Unless a more lenient policy is stated in the listing: a Renter cancellation 65+ days before check-in forfeits 50% of the Rental Payment to Owner; fewer than 65 days forfeits 100%. All cancellations must be processed through the ResortFlips platform.</p>
+
+    <h3>7. Acknowledgment</h3>
+    <p>By signing, Owner and Renter acknowledge they have read and agreed to this Rental Agreement and the incorporated <a href="/terms.html" target="_blank">ResortFlips Terms &amp; Conditions</a>, including the Limitation of Liability, Arbitration and Class-Action Waiver, Disclaimer of Warranties, Cancellation Policy, and the funds-held-until-check-in payment process. The parties agree this Agreement may be signed electronically, and that acceptance through the ResortFlips platform is a valid and binding signature under the E-SIGN Act.</p>
+  </div>
+  <p class="scroll-hint">↑ Scroll through the full agreement above before signing.</p>
+
+  <!-- SIGNATURE PANEL -->
+  <div class="sig-panel" id="sigPanel">
+    <div class="sig-title">Sign as <span id="sig-role-label">Renter</span></div>
+    <div class="sig-desc">Type your full legal name exactly as shown to apply your electronic signature.</div>
+
+    <div class="sig-field">
+      <label for="sigName">Full legal name</label>
+      <input type="text" id="sigName" autocomplete="off" placeholder="Type your name" oninput="checkSig()">
+      <div class="hint" id="sigHint">Expected: <strong id="sig-expected">Jordan Mitchell</strong></div>
+    </div>
+
+    <label class="sig-check">
+      <input type="checkbox" id="sigAgree" onchange="checkSig()">
+      <span>I have read and agree to this Rental Agreement and the ResortFlips Terms &amp; Conditions, and I understand my payment is held until 24–48 hours after check-in.</span>
+    </label>
+
+    <button class="sig-btn" id="sigBtn" disabled onclick="doSign()">Sign &amp; Accept Agreement</button>
+    <div class="sig-legal">Your typed name, the date and time, and a unique acceptance ID will be recorded as your electronic signature.</div>
+  </div>
+
+  <!-- ACCEPTED STATE -->
+  <div class="accepted" id="accepted">
+    <div class="acc-badge">✓ Agreement Signed</div>
+    <div class="acc-title">You're all set, <span id="acc-firstname">Jordan</span>.</div>
+    <div class="acc-desc">Your rental agreement has been electronically signed and recorded. A copy has been sent to your email. The owner will add your name to the reservation within 48 hours — we'll notify you when it's confirmed.</div>
+
+    <div class="acc-record">
+      <h4>Electronic Signature Record</h4>
+      <div class="acc-row"><span class="k">Signed by</span><span class="v" id="r-name">—</span></div>
+      <div class="acc-row"><span class="k">Role</span><span class="v" id="r-role">—</span></div>
+      <div class="acc-row"><span class="k">Date &amp; time (ET)</span><span class="v" id="r-time">—</span></div>
+      <div class="acc-row"><span class="k">Booking reference</span><span class="v" id="r-ref">—</span></div>
+      <div class="acc-row"><span class="k">Agreement version</span><span class="v">RA v1.0</span></div>
+      <div class="acc-row"><span class="k">Acceptance ID</span><span class="v" id="r-id">—</span></div>
+      <div class="acc-stored" id="r-stored"></div>
+    </div>
+
+    <div class="acc-actions">
+      <button class="acc-btn primary" onclick="window.print()">Download / print copy</button>
+      <button class="acc-btn ghost" onclick="resetSign()">↺ Run the demo again</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo">Resort<em>Flips</em></div>
+        <div class="foot-tag">The Zillow of vacation ownership. Transparent. Expert. On your side. No Sales. Just Facts.</div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Major Charts</h4>
+          <a href="/marriott-points-chart.html">Marriott Abound</a>
+          <a href="/dvc-points-chart.html">DVC Points</a>
+          <a href="/staroptions-chart.html">Vistana StarOptions</a>
+          <a href="/hyatt-points-chart.html">Hyatt HRC</a>
+          <a href="/hgvc-points-chart.html">Hilton HGVC</a>
+          <a href="/wyndham-points-chart.html">Club Wyndham</a>
+          <a href="/charts.html"><strong>All 12 Charts →</strong></a>
+        </div>
+        <div class="foot-col">
+          <h4>Other Brands</h4>
+          <a href="/worldmark-points-chart.html">WorldMark</a>
+          <a href="/diamond-hgv-max-chart.html">Diamond/HGV Max</a>
+          <a href="/embarc-points-chart.html">Embarc</a>
+          <a href="/four-seasons-chart.html">Four Seasons RC</a>
+          <a href="/montage-residences-chart.html">Montage Residences</a>
+          <a href="/westin-whistler-chart.html">Westin Whistler</a>
+        </div>
+        <div class="foot-col">
+          <h4>Tools</h4>
+          <a href="/rentals.html">Search Rentals</a>
+          <a href="/deal-analyzer.html">Deal Analyzer</a>
+          <a href="/compare.html">Compare Two</a>
+          <a href="/point-converter.html">Point Converter</a>
+          <a href="/brands.html">Brand Directory</a>
+          <a href="/glossary.html">Glossary</a>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <a href="/about.html">About</a>
+          <a href="/how-verification-works.html">How Verification Works</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+      </div>
+    <div class="foot-bottom">
+      <span>© 2026 ResortFlips. All rights reserved.</span>
+      <span>Indigo Property Services LLC · Apex, NC</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Google Analytics 4 (consent-gated) ============ -->
+<!-- Replace G-5YG3Z1YV5Z with your real GA4 Measurement ID after creating the property. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5YG3Z1YV5Z"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+// Default to DENIED — load actual tracking only after user consents.
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied'
+});
+
+gtag('config', 'G-5YG3Z1YV5Z', {
+  'anonymize_ip': true,
+  'allow_google_signals': false,
+  'allow_ad_personalization_signals': false
+});
+
+// Check stored consent on every page load
+(function(){
+  var c = localStorage.getItem('rf_consent');
+  if(c === 'granted'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
+</script>
+
+<!-- ============ Cookie consent banner ============ -->
+<style id="rf-consent-style">
+#rf-consent{
+  position:fixed;bottom:20px;left:20px;right:20px;max-width:560px;margin-left:auto;
+  background:#0B1D2E;color:#FFF8F0;border-radius:14px;padding:18px 20px;
+  box-shadow:0 24px 48px -16px rgba(0,0,0,0.4);
+  font-family:'Inter',-apple-system,sans-serif;font-size:13.5px;line-height:1.5;
+  z-index:9999;display:none;
+}
+#rf-consent.show{display:block;animation:rfconsent 0.3s ease}
+@keyframes rfconsent{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+#rf-consent strong{color:#fff;font-weight:600}
+#rf-consent a{color:#FF7A59;font-weight:600;text-decoration:none}
+#rf-consent a:hover{text-decoration:underline}
+#rf-consent-buttons{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+#rf-consent button{
+  border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;
+  padding:9px 16px;border-radius:8px;transition:opacity 0.15s;
+}
+#rf-consent .rf-accept{background:#FF7A59;color:#fff}
+#rf-consent .rf-accept:hover{opacity:0.9}
+#rf-consent .rf-decline{background:transparent;color:#9ba8bd;border:1px solid #1f3147}
+#rf-consent .rf-decline:hover{color:#fff;border-color:#fff}
+</style>
+<div id="rf-consent" role="dialog" aria-live="polite" aria-label="Cookie preferences">
+  <strong>We use cookies for analytics.</strong>
+  <p style="margin:6px 0 0">We use Google Analytics to understand how visitors find and use ResortFlips. We do not sell your data or use advertising trackers. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+  <div id="rf-consent-buttons">
+    <button class="rf-accept" onclick="rfConsent(true)">Accept analytics</button>
+    <button class="rf-decline" onclick="rfConsent(false)">Decline</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem('rf_consent')){
+    setTimeout(function(){
+      var el = document.getElementById('rf-consent');
+      if(el) el.classList.add('show');
+    }, 800);
+  }
+})();
+function rfConsent(grant){
+  localStorage.setItem('rf_consent', grant ? 'granted' : 'declined');
+  if(grant && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+  document.getElementById('rf-consent').classList.remove('show');
+}
+</script>
+
+</body>
+</html>
