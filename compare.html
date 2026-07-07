@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare Two Timeshares — Side by Side | ResortFlips</title>
+<meta name="description" content="Compare two timeshares side by side. Cost per point, maintenance fee efficiency, resale value — all the math in one place. Free, no sign-up.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#FFF8F0">
+<link rel="canonical" href="https://resortflips.com/compare.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ResortFlips">
+<meta property="og:title" content="Compare Two Timeshares Side by Side">
+<meta property="og:description" content="Cost per point, MF efficiency, resale value — all the math in one place.">
+<meta property="og:url" content="https://resortflips.com/compare.html">
+<meta property="og:image" content="https://resortflips.com/og/og-home.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style id="rf-skip-style">.rf-skip{position:absolute;left:-9999px;top:0;background:#1A2B3A;color:#fff;padding:10px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 8px 0;z-index:99999}.rf-skip:focus{left:0}</style>
+<style>
+:root{--midnight:#0B1D2E;--ink:#1A2B3A;--coral:#FF7A59;--coral-deep:#E85D3C;--teal:#0EA5A4;--gold:#FFB627;--leaf:#5BAE8A;--paper:#FFF8F0;--cream:#FFEFDB;--line:rgba(26,43,58,.08);--mute:#6B7A89;--serif:'Fraunces',Georgia,serif;--sans:'Inter',-apple-system,sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,248,240,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--midnight);text-decoration:none;letter-spacing:-0.5px}
+.logo em{color:var(--coral);font-style:normal}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+.nav-links a:hover{color:var(--coral)}
+.nav-cta{background:var(--midnight);color:white;padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600}
+.nav-cta:hover{background:var(--coral)}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+.hero{padding:70px 28px 28px;max-width:1280px;margin:0 auto;text-align:center}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--coral);border:1px solid var(--coral);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+h1{font-family:var(--serif);font-weight:900;font-size:clamp(38px,5.5vw,60px);line-height:1.04;letter-spacing:-1.5px;color:var(--midnight);margin-bottom:14px;max-width:780px;margin-left:auto;margin-right:auto}
+h1 em{font-style:italic;color:var(--coral);font-weight:500}
+.lead{font-size:18px;color:var(--mute);max-width:600px;margin:0 auto;line-height:1.5}
+.tool{max-width:1100px;margin:30px auto 60px;padding:0 28px}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:720px){.compare-grid{grid-template-columns:1fr}}
+.option{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 1px 0 rgba(11,29,46,0.04),0 8px 24px -12px rgba(11,29,46,0.10)}
+.option h3{font-family:var(--serif);font-weight:700;font-size:22px;color:var(--midnight);letter-spacing:-0.3px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+.option .badge{font-family:var(--mono);font-size:11px;background:var(--cream);color:var(--midnight);padding:4px 10px;border-radius:999px;font-weight:600;letter-spacing:0.5px}
+.option.a .badge{background:rgba(255,122,89,0.12);color:var(--coral-deep)}
+.option.b .badge{background:rgba(14,165,164,0.12);color:var(--teal)}
+.option .sub{color:var(--mute);font-size:13px;margin-bottom:18px}
+.field{margin-bottom:14px}
+.field label{display:block;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--midnight);font-weight:600;margin-bottom:6px}
+.field input, .field select{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--cream);font-family:var(--sans);font-size:14px;color:var(--ink);transition:all 0.15s}
+.field input:focus, .field select:focus{outline:none;border-color:var(--coral);background:white}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cta-row{text-align:center;margin-top:24px}
+.btn-compare{padding:16px 36px;background:var(--midnight);color:white;border:none;border-radius:14px;font-family:var(--sans);font-size:15px;font-weight:600;cursor:pointer;transition:all 0.15s;letter-spacing:0.3px}
+.btn-compare:hover{background:var(--coral);transform:translateY(-1px);box-shadow:0 12px 32px rgba(255,122,89,.3)}
+/* RESULTS */
+.results{display:none;max-width:1100px;margin:0 auto 80px;padding:0 28px}
+.results.show{display:block;animation:fadeUp 0.5s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.winner-card{background:linear-gradient(135deg,white,#FFF8F0);border:2px solid var(--coral);border-radius:24px;padding:32px;text-align:center;margin-bottom:28px}
+.winner-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--coral);margin-bottom:12px;font-weight:600}
+.winner-headline{font-family:var(--serif);font-size:32px;font-weight:700;color:var(--midnight);letter-spacing:-0.6px;line-height:1.2;margin-bottom:8px}
+.winner-headline em{font-style:italic;color:var(--coral);font-weight:500}
+.winner-sub{color:var(--mute);font-size:15px;max-width:520px;margin:0 auto}
+.metrics{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:18px}
+.metric-row{display:grid;grid-template-columns:1fr 130px 1fr;border-bottom:1px solid var(--line);padding:18px 22px;align-items:center;gap:16px}
+@media(max-width:600px){.metric-row{grid-template-columns:1fr;padding:14px 18px;text-align:center}}
+.metric-row:last-child{border-bottom:none}
+.metric-row .label{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--mute);text-align:center}
+.metric-val{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--midnight);letter-spacing:-0.3px}
+.metric-val .currency{font-size:14px;color:var(--mute);font-weight:500;margin-right:2px}
+.metric-val.dim{color:var(--mute);font-weight:500}
+.metric-val.win{color:var(--coral)}
+.metric-val.win.b{color:var(--teal)}
+.metric-context{font-size:11.5px;color:var(--mute);font-style:italic;margin-top:2px}
+.col-a{text-align:right}
+.col-b{text-align:left}
+@media(max-width:600px){.col-a,.col-b{text-align:center}}
+.disclaimer{font-size:12px;color:var(--mute);font-style:italic;text-align:center;margin-top:20px}
+footer{background:var(--midnight);color:#9ba8bd;padding:50px 28px 28px}
+.foot-inner{max-width:1080px;margin:0 auto}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px;padding-bottom:26px;border-bottom:1px solid #1f3147}
+.foot-logo{font-family:var(--serif);font-weight:900;font-size:24px;color:white;letter-spacing:-0.3px;margin-bottom:6px}
+.foot-logo em{color:var(--coral);font-style:normal}
+.foot-tag{font-size:13px;max-width:340px}
+.foot-cols{display:flex;gap:48px;flex-wrap:wrap}
+.foot-col h4{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1.5px;color:#6b7a93;font-weight:600;margin-bottom:10px}
+.foot-col a{display:block;color:#9ba8bd;text-decoration:none;font-size:13px;margin-bottom:6px}
+.foot-col a:hover{color:var(--coral)}
+.foot-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#6b7a93}
+</style>
+<style>
+/* Standardized dropdown nav */
+.nav-dropdown{position:relative}
+.nav-dropdown-btn{background:none;border:none;font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:4px}
+.nav-dropdown-btn:hover{color:var(--coral)}
+.nav-dropdown-btn[aria-expanded="true"]{color:var(--coral)}
+.nav-dropdown-btn .caret{font-size:10px;line-height:1;transition:transform 0.15s}
+.nav-dropdown-btn[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(11,29,46,.12);padding:14px;min-width:520px;display:none;z-index:200}
+.nav-dropdown-menu.open{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.nav-dropdown-menu a{display:block;padding:10px 12px;border-radius:8px;font-size:13px;color:var(--ink);font-weight:500;line-height:1.3;text-decoration:none}
+.nav-dropdown-menu a:hover{background:var(--cream);color:var(--coral)}
+.nav-dropdown-menu a strong{display:block;font-family:var(--serif);font-size:15px;font-weight:600;color:var(--midnight);margin-bottom:2px}
+.nav-dropdown-menu a:hover strong{color:var(--coral)}
+.nav-dropdown-menu a .sub{font-size:11px;color:var(--mute);font-family:var(--mono);letter-spacing:0.5px;text-transform:uppercase}
+.nav-dropdown-menu .all-charts{grid-column:1/-1;border-top:1px solid var(--line);margin-top:8px;padding-top:12px;text-align:center}
+.nav-dropdown-menu .all-charts a{background:var(--cream);color:var(--coral);font-weight:600;text-align:center;padding:10px}
+.nav-dropdown-menu .all-charts a:hover{background:var(--coral);color:white}
+@media (max-width:768px){
+  .nav-dropdown-menu{position:fixed;top:auto;bottom:0;left:0;right:0;transform:none;border-radius:14px 14px 0 0;min-width:0;max-height:70vh;overflow-y:auto;padding:20px}
+  .nav-dropdown-menu.open{grid-template-columns:1fr}
+}
+</style>
+<script>
+// Close dropdown when clicking outside
+document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.nav-dropdown-menu.open').forEach(function(menu){
+      if(!menu.parentElement.contains(e.target)){
+        menu.classList.remove('open');
+        menu.previousElementSibling.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Compare Two Timeshares",
+  "description": "Side-by-side comparison tool for two timeshare resorts.",
+  "url": "https://resortflips.com/compare.html",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "ResortFlips" }
+}
+</script>
+
+</head>
+<body>
+<a href="#main-content" class="rf-skip">Skip to main content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo">Resort<em>Flips</em></a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+      <button class="nav-dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.classList.toggle('open');event.stopPropagation();">Charts <span class="caret">▾</span></button>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="/marriott-points-chart.html"><strong>Marriott Abound</strong><span class="sub">72 resorts</span></a>
+        <a href="/dvc-points-chart.html"><strong>Disney Vacation Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/staroptions-chart.html"><strong>Vistana StarOptions</strong><span class="sub">28 resorts</span></a>
+        <a href="/hyatt-points-chart.html"><strong>Hyatt Residence Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/hgvc-points-chart.html"><strong>Hilton HGVC</strong><span class="sub">14 resorts</span></a>
+        <a href="/wyndham-points-chart.html"><strong>Club Wyndham</strong><span class="sub">12 + tiers</span></a>
+        <a href="/worldmark-points-chart.html"><strong>WorldMark</strong><span class="sub">Red/White/Blue</span></a>
+        <a href="/diamond-hgv-max-chart.html"><strong>Diamond / HGV Max</strong><span class="sub">9 collections</span></a>
+        <a href="/embarc-points-chart.html"><strong>Embarc Resorts</strong><span class="sub">9 of 9</span></a>
+        <a href="/four-seasons-chart.html"><strong>Four Seasons RC</strong><span class="sub">Fractional</span></a>
+        <a href="/montage-residences-chart.html"><strong>Montage</strong><span class="sub">Fractional</span></a>
+        <a href="/westin-whistler-chart.html"><strong>Westin Whistler</strong><span class="sub">Phase 2</span></a>
+        <div class="all-charts"><a href="/charts.html">View All Charts →</a></div>
+      </div>
+    </div>
+      <a href="/rentals.html">Rentals</a>
+      <a href="/deal-analyzer.html">Deal Analyzer</a>
+      <a href="/compare.html">Compare</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="main-content">
+  <span class="eyebrow">Compare Two Timeshares</span>
+  <h1>Two ownerships, <em>one honest comparison.</em></h1>
+  <p class="lead">Side-by-side breakdown of two timeshares: cost per point, maintenance fee efficiency, resale value, and which one wins on the metrics that matter.</p>
+</section>
+
+<section class="tool">
+  <div class="compare-grid">
+    <div class="option a">
+      <h3>Option A <span class="badge">First</span></h3>
+      <p class="sub">Enter the details</p>
+      <div class="field">
+        <label for="a-name">Nickname (optional)</label>
+        <input id="a-name" type="text" placeholder="e.g. Westin Nanea 2BR">
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="a-price">Purchase price</label>
+          <input id="a-price" type="text" inputmode="numeric" placeholder="$15,000" oninput="formatMoney(this)">
+        </div>
+        <div class="field">
+          <label for="a-mf">Annual MF</label>
+          <input id="a-mf" type="text" inputmode="numeric" placeholder="$1,800" oninput="formatMoney(this)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="a-points">Annual points</label>
+          <input id="a-points" type="text" inputmode="numeric" placeholder="148,100" oninput="formatMoney(this)">
+        </div>
+        <div class="field">
+          <label for="a-system">System</label>
+          <select id="a-system">
+            <option value="staroptions">StarOptions</option>
+            <option value="mvcp">Marriott MVCP</option>
+            <option value="hgv">Hilton HGV</option>
+            <option value="wyndham">Wyndham</option>
+            <option value="weeks">Weeks-based</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="option b">
+      <h3>Option B <span class="badge">Second</span></h3>
+      <p class="sub">Or compare against your current</p>
+      <div class="field">
+        <label for="b-name">Nickname (optional)</label>
+        <input id="b-name" type="text" placeholder="e.g. Marriott Ko Olina">
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="b-price">Purchase price</label>
+          <input id="b-price" type="text" inputmode="numeric" placeholder="$22,000" oninput="formatMoney(this)">
+        </div>
+        <div class="field">
+          <label for="b-mf">Annual MF</label>
+          <input id="b-mf" type="text" inputmode="numeric" placeholder="$2,400" oninput="formatMoney(this)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="b-points">Annual points</label>
+          <input id="b-points" type="text" inputmode="numeric" placeholder="3,000" oninput="formatMoney(this)">
+        </div>
+        <div class="field">
+          <label for="b-system">System</label>
+          <select id="b-system">
+            <option value="staroptions">StarOptions</option>
+            <option value="mvcp" selected>Marriott MVCP</option>
+            <option value="hgv">Hilton HGV</option>
+            <option value="wyndham">Wyndham</option>
+            <option value="weeks">Weeks-based</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <button class="btn-compare" onclick="runCompare()">Compare them →</button>
+  </div>
+</section>
+
+<section class="results" id="results">
+  <div class="winner-card">
+    <div class="winner-eyebrow">VERDICT</div>
+    <div class="winner-headline" id="winner-head">—</div>
+    <div class="winner-sub" id="winner-sub">—</div>
+  </div>
+
+  <div class="metrics" id="metrics"></div>
+
+  <div class="disclaimer">
+    Numbers above are directional comparisons based on the inputs you provided. Real-world value depends on resort quality, season, view, and use patterns. This tool helps with the math; it doesn't replace your judgment.
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo">Resort<em>Flips</em></div>
+        <div class="foot-tag">The Zillow of vacation ownership. Transparent. Expert. On your side. No Sales. Just Facts.</div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Major Charts</h4>
+          <a href="/marriott-points-chart.html">Marriott Abound</a>
+          <a href="/dvc-points-chart.html">DVC Points</a>
+          <a href="/staroptions-chart.html">Vistana StarOptions</a>
+          <a href="/hyatt-points-chart.html">Hyatt HRC</a>
+          <a href="/hgvc-points-chart.html">Hilton HGVC</a>
+          <a href="/wyndham-points-chart.html">Club Wyndham</a>
+          <a href="/charts.html"><strong>All 12 Charts →</strong></a>
+        </div>
+        <div class="foot-col">
+          <h4>Other Brands</h4>
+          <a href="/worldmark-points-chart.html">WorldMark</a>
+          <a href="/diamond-hgv-max-chart.html">Diamond/HGV Max</a>
+          <a href="/embarc-points-chart.html">Embarc</a>
+          <a href="/four-seasons-chart.html">Four Seasons RC</a>
+          <a href="/montage-residences-chart.html">Montage Residences</a>
+          <a href="/westin-whistler-chart.html">Westin Whistler</a>
+        </div>
+        <div class="foot-col">
+          <h4>Tools</h4>
+          <a href="/rentals.html">Search Rentals</a>
+          <a href="/deal-analyzer.html">Deal Analyzer</a>
+          <a href="/compare.html">Compare Two</a>
+          <a href="/point-converter.html">Point Converter</a>
+          <a href="/brands.html">Brand Directory</a>
+          <a href="/glossary.html">Glossary</a>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+      </div>
+    <div class="foot-bottom">
+      <span>© 2026 ResortFlips. All rights reserved.</span>
+      <span>Indigo Property Services LLC · Apex, NC</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/data-charts.js"></script>
+<script>
+function formatMoney(el) {
+  const raw = el.value.replace(/[^\d]/g, '');
+  el.value = raw ? parseInt(raw).toLocaleString() : '';
+}
+
+function parseMoney(s) {
+  if (!s) return 0;
+  return parseInt(String(s).replace(/[^\d]/g, '')) || 0;
+}
+
+function fmt(n) { return Math.round(n).toLocaleString(); }
+function fmt2(n) { return n.toFixed(2); }
+
+// Conversion to a standard "value point" (StarOptions baseline)
+const POINT_BASE = {
+  staroptions: 1, mvcp: 50, hgv: 23, wyndham: 0.7, weeks: 80000, // 1 week ≈ 80k StarOptions
+};
+
+function runCompare() {
+  const a = {
+    name: document.getElementById('a-name').value || 'Option A',
+    price: parseMoney(document.getElementById('a-price').value),
+    mf: parseMoney(document.getElementById('a-mf').value),
+    points: parseMoney(document.getElementById('a-points').value),
+    system: document.getElementById('a-system').value,
+  };
+  const b = {
+    name: document.getElementById('b-name').value || 'Option B',
+    price: parseMoney(document.getElementById('b-price').value),
+    mf: parseMoney(document.getElementById('b-mf').value),
+    points: parseMoney(document.getElementById('b-points').value),
+    system: document.getElementById('b-system').value,
+  };
+
+  // Validate
+  if (!a.price || !a.mf || !a.points || !b.price || !b.mf || !b.points) {
+    alert('Please fill in all numeric fields for both options.');
+    return;
+  }
+
+  // Normalize points to "standard StarOptions" equivalent
+  a.normPoints = a.points * POINT_BASE[a.system];
+  b.normPoints = b.points * POINT_BASE[b.system];
+
+  // Cost per StarOption-equivalent point (one-time)
+  a.cpp = a.price / a.normPoints;
+  b.cpp = b.price / b.normPoints;
+
+  // Annual MF per point
+  a.mfpp = a.mf / a.normPoints;
+  b.mfpp = b.mf / b.normPoints;
+
+  // 10-year total cost (price + 10 years MF + 3% inflation)
+  const mfInflation = (years) => {
+    let total = 0; let mf = 1;
+    for (let i = 0; i < years; i++) { total += mf; mf *= 1.04; }
+    return total;
+  };
+  const tenYearMult = mfInflation(10);
+  a.tenYear = a.price + a.mf * tenYearMult;
+  b.tenYear = b.price + b.mf * tenYearMult;
+
+  // 10-year cost per point
+  a.tenYearPP = a.tenYear / a.normPoints;
+  b.tenYearPP = b.tenYear / b.normPoints;
+
+  // Decide winners on each metric (lower is better)
+  const better = (av, bv) => av < bv ? 'a' : (av > bv ? 'b' : 'tie');
+
+  const metrics = [
+    { lbl: 'Purchase price', a: '$' + fmt(a.price), b: '$' + fmt(b.price), winner: better(a.price, b.price), context: 'Lower is better for upfront cost' },
+    { lbl: 'Annual MF', a: '$' + fmt(a.mf), b: '$' + fmt(b.mf), winner: better(a.mf, b.mf), context: 'Lower MF = lower ongoing cost' },
+    { lbl: 'Cost per point (one-time)', a: '$' + fmt2(a.cpp), b: '$' + fmt2(b.cpp), winner: better(a.cpp, b.cpp), context: 'Upfront $ per StarOption-equivalent' },
+    { lbl: 'MF per point per year', a: '$' + fmt2(a.mfpp), b: '$' + fmt2(b.mfpp), winner: better(a.mfpp, b.mfpp), context: 'Best measure of ongoing efficiency' },
+    { lbl: '10-year total cost', a: '$' + fmt(a.tenYear), b: '$' + fmt(b.tenYear), winner: better(a.tenYear, b.tenYear), context: 'Price + 10 yrs MF (4% inflation)' },
+    { lbl: 'Annual points', a: fmt(a.points) + ' (' + a.system + ')', b: fmt(b.points) + ' (' + b.system + ')', winner: better(b.normPoints, a.normPoints), context: 'More booking power per year' },
+  ];
+
+  // Score for overall winner — weight efficiency higher than price
+  const aWins = metrics.filter(m => m.winner === 'a').length;
+  const bWins = metrics.filter(m => m.winner === 'b').length;
+
+  let headline, sub;
+  if (Math.abs(aWins - bWins) <= 1) {
+    headline = `It's <em>close</em>.`;
+    sub = `${a.name} wins on ${aWins} metrics, ${b.name} wins on ${bWins}. The right choice depends on which metric matters most to you — see breakdown below.`;
+  } else if (aWins > bWins) {
+    headline = `${a.name} wins on <em>more metrics</em>.`;
+    sub = `${a.name} comes out ahead on ${aWins} out of ${metrics.length} measures. The biggest differences are below.`;
+  } else {
+    headline = `${b.name} wins on <em>more metrics</em>.`;
+    sub = `${b.name} comes out ahead on ${bWins} out of ${metrics.length} measures. The biggest differences are below.`;
+  }
+  document.getElementById('winner-head').innerHTML = headline;
+  document.getElementById('winner-sub').textContent = sub;
+
+  // Render metrics table
+  document.getElementById('metrics').innerHTML = metrics.map(m => `
+    <div class="metric-row">
+      <div class="col-a">
+        <div class="metric-val ${m.winner === 'a' ? 'win' : 'dim'}">${m.a}</div>
+        ${m.winner === 'a' ? '<div class="metric-context">✓ Winner</div>' : ''}
+      </div>
+      <div class="label">${m.lbl}<div class="metric-context">${m.context}</div></div>
+      <div class="col-b">
+        <div class="metric-val ${m.winner === 'b' ? 'win b' : 'dim'}">${m.b}</div>
+        ${m.winner === 'b' ? '<div class="metric-context">✓ Winner</div>' : ''}
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('results').classList.add('show');
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+
+</body>
+</html>
