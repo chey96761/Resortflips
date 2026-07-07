@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Point Converter — StarOptions, MVCP, HGV | ResortFlips</title>
+<meta name="description" content="Cross-system timeshare point converter. Translate StarOptions ↔ Marriott Vacation Club ↔ Hilton Grand Vacations points. Free, no sign-up.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#FFF8F0">
+<link rel="canonical" href="https://resortflips.com/point-converter.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ResortFlips">
+<meta property="og:title" content="Cross-System Point Converter">
+<meta property="og:description" content="Translate StarOptions ↔ Marriott ↔ Hilton points. Free.">
+<meta property="og:url" content="https://resortflips.com/point-converter.html">
+<meta property="og:image" content="https://resortflips.com/og/og-home.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style id="rf-skip-style">.rf-skip{position:absolute;left:-9999px;top:0;background:#1A2B3A;color:#fff;padding:10px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 8px 0;z-index:99999}.rf-skip:focus{left:0}</style>
+<style>
+:root{--midnight:#0B1D2E;--ink:#1A2B3A;--coral:#FF7A59;--coral-deep:#E85D3C;--teal:#0EA5A4;--gold:#FFB627;--leaf:#5BAE8A;--paper:#FFF8F0;--cream:#FFEFDB;--line:rgba(26,43,58,.08);--mute:#6B7A89;--serif:'Fraunces',Georgia,serif;--sans:'Inter',-apple-system,sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,248,240,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-weight:900;font-size:22px;color:var(--midnight);text-decoration:none;letter-spacing:-0.5px}
+.logo em{color:var(--coral);font-style:normal}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+.nav-links a:hover{color:var(--coral)}
+.nav-cta{background:var(--midnight);color:white;padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600}
+.nav-cta:hover{background:var(--coral)}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+.hero{padding:70px 28px 36px;max-width:1080px;margin:0 auto;text-align:center}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--coral);border:1px solid var(--coral);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+h1{font-family:var(--serif);font-weight:900;font-size:clamp(38px,5.5vw,60px);line-height:1.04;letter-spacing:-1.5px;color:var(--midnight);margin-bottom:18px;max-width:780px;margin-left:auto;margin-right:auto}
+h1 em{font-style:italic;color:var(--coral);font-weight:500}
+.lead{font-size:18px;color:var(--mute);max-width:580px;margin:0 auto;line-height:1.55}
+.tool{max-width:880px;margin:30px auto 50px;padding:0 28px}
+.converter{background:white;border:1px solid var(--line);border-radius:24px;padding:36px;box-shadow:0 1px 0 rgba(11,29,46,0.04),0 12px 40px -12px rgba(11,29,46,0.12)}
+@media(max-width:560px){.converter{padding:24px;border-radius:18px}}
+.conv-grid{display:grid;grid-template-columns:1fr 50px 1fr;gap:20px;align-items:end}
+@media(max-width:680px){.conv-grid{grid-template-columns:1fr;gap:14px}}
+.conv-side .lbl{display:block;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1.5px;color:var(--midnight);font-weight:600;margin-bottom:8px}
+.conv-side select, .conv-side input{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:12px;background:var(--cream);font-family:var(--sans);font-size:15px;color:var(--ink);transition:all 0.15s;margin-bottom:12px}
+.conv-side select:focus, .conv-side input:focus{outline:none;border-color:var(--coral);background:white}
+.conv-side .big-amount{font-family:var(--serif);font-size:32px;font-weight:700;padding:18px 16px;color:var(--midnight);text-align:center;background:var(--cream);border:none}
+.conv-side .big-amount[readonly]{background:linear-gradient(135deg,#FFEDDA,#FFF8F0);color:var(--coral);border:1px solid rgba(255,122,89,0.2)}
+.swap-btn{align-self:flex-end;margin-bottom:12px;background:white;border:1.5px solid var(--line);border-radius:12px;width:50px;height:50px;display:grid;place-items:center;cursor:pointer;font-size:18px;transition:all 0.15s;color:var(--midnight)}
+.swap-btn:hover{border-color:var(--coral);color:var(--coral);transform:rotate(180deg)}
+@media(max-width:680px){.swap-btn{justify-self:center;transform:rotate(90deg)}.swap-btn:hover{transform:rotate(270deg)}}
+.context{margin-top:24px;padding:18px 22px;background:var(--cream);border-radius:14px;font-size:14px;color:var(--ink);line-height:1.6}
+.context strong{color:var(--midnight)}
+.context em{color:var(--coral);font-style:italic;font-weight:500}
+.examples{max-width:880px;margin:0 auto 80px;padding:0 28px}
+.examples h2{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--midnight);letter-spacing:-0.6px;margin-bottom:8px}
+.examples h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.examples .sub{color:var(--mute);font-size:15px;margin-bottom:22px}
+.ex-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:680px){.ex-grid{grid-template-columns:1fr}}
+.ex{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;cursor:pointer;transition:all 0.15s}
+.ex:hover{border-color:var(--coral);transform:translateY(-1px);box-shadow:0 8px 24px -12px rgba(26,43,58,.12)}
+.ex .ex-from{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--midnight);letter-spacing:-0.3px;margin-bottom:4px}
+.ex .ex-arrow{font-family:var(--mono);color:var(--coral);font-size:14px;margin:6px 0;font-weight:600}
+.ex .ex-to{font-family:var(--serif);font-size:18px;color:var(--mute);font-weight:600}
+.ex .ex-context{font-size:12px;color:var(--mute);margin-top:8px;font-style:italic}
+.info{max-width:760px;margin:0 auto 80px;padding:0 28px}
+.info-card{background:white;border:1px solid var(--line);border-radius:18px;padding:32px}
+@media(max-width:560px){.info-card{padding:22px}}
+.info h2{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--midnight);letter-spacing:-0.5px;margin-bottom:12px}
+.info h2 em{color:var(--coral);font-style:italic;font-weight:500}
+.info h3{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--midnight);margin:20px 0 6px}
+.info p{font-size:15px;color:var(--ink);margin-bottom:14px;line-height:1.65}
+.info p strong{color:var(--midnight);font-weight:600}
+footer{background:var(--midnight);color:#9ba8bd;padding:50px 28px 28px}
+.foot-inner{max-width:1080px;margin:0 auto}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px;padding-bottom:26px;border-bottom:1px solid #1f3147}
+.foot-logo{font-family:var(--serif);font-weight:900;font-size:24px;color:white;letter-spacing:-0.3px;margin-bottom:6px}
+.foot-logo em{color:var(--coral);font-style:normal}
+.foot-tag{font-size:13px;max-width:340px}
+.foot-cols{display:flex;gap:48px;flex-wrap:wrap}
+.foot-col h4{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1.5px;color:#6b7a93;font-weight:600;margin-bottom:10px}
+.foot-col a{display:block;color:#9ba8bd;text-decoration:none;font-size:13px;margin-bottom:6px}
+.foot-col a:hover{color:var(--coral)}
+.foot-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#6b7a93}
+</style>
+<style>
+/* Standardized dropdown nav */
+.nav-dropdown{position:relative}
+.nav-dropdown-btn{background:none;border:none;font-family:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:4px}
+.nav-dropdown-btn:hover{color:var(--coral)}
+.nav-dropdown-btn[aria-expanded="true"]{color:var(--coral)}
+.nav-dropdown-btn .caret{font-size:10px;line-height:1;transition:transform 0.15s}
+.nav-dropdown-btn[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(11,29,46,.12);padding:14px;min-width:520px;display:none;z-index:200}
+.nav-dropdown-menu.open{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.nav-dropdown-menu a{display:block;padding:10px 12px;border-radius:8px;font-size:13px;color:var(--ink);font-weight:500;line-height:1.3;text-decoration:none}
+.nav-dropdown-menu a:hover{background:var(--cream);color:var(--coral)}
+.nav-dropdown-menu a strong{display:block;font-family:var(--serif);font-size:15px;font-weight:600;color:var(--midnight);margin-bottom:2px}
+.nav-dropdown-menu a:hover strong{color:var(--coral)}
+.nav-dropdown-menu a .sub{font-size:11px;color:var(--mute);font-family:var(--mono);letter-spacing:0.5px;text-transform:uppercase}
+.nav-dropdown-menu .all-charts{grid-column:1/-1;border-top:1px solid var(--line);margin-top:8px;padding-top:12px;text-align:center}
+.nav-dropdown-menu .all-charts a{background:var(--cream);color:var(--coral);font-weight:600;text-align:center;padding:10px}
+.nav-dropdown-menu .all-charts a:hover{background:var(--coral);color:white}
+@media (max-width:768px){
+  .nav-dropdown-menu{position:fixed;top:auto;bottom:0;left:0;right:0;transform:none;border-radius:14px 14px 0 0;min-width:0;max-height:70vh;overflow-y:auto;padding:20px}
+  .nav-dropdown-menu.open{grid-template-columns:1fr}
+}
+</style>
+<script>
+// Close dropdown when clicking outside
+document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.nav-dropdown-menu.open').forEach(function(menu){
+      if(!menu.parentElement.contains(e.target)){
+        menu.classList.remove('open');
+        menu.previousElementSibling.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Timeshare Point Converter",
+  "description": "Convert between StarOptions, Abound, DVC, HGV, Wyndham, and other point systems.",
+  "url": "https://resortflips.com/point-converter.html",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "ResortFlips" }
+}
+</script>
+
+</head>
+<body>
+<a href="#main-content" class="rf-skip">Skip to main content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo">Resort<em>Flips</em></a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+      <button class="nav-dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.classList.toggle('open');event.stopPropagation();">Charts <span class="caret">▾</span></button>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="/marriott-points-chart.html"><strong>Marriott Abound</strong><span class="sub">72 resorts</span></a>
+        <a href="/dvc-points-chart.html"><strong>Disney Vacation Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/staroptions-chart.html"><strong>Vistana StarOptions</strong><span class="sub">28 resorts</span></a>
+        <a href="/hyatt-points-chart.html"><strong>Hyatt Residence Club</strong><span class="sub">17 of 17</span></a>
+        <a href="/hgvc-points-chart.html"><strong>Hilton HGVC</strong><span class="sub">14 resorts</span></a>
+        <a href="/wyndham-points-chart.html"><strong>Club Wyndham</strong><span class="sub">12 + tiers</span></a>
+        <a href="/worldmark-points-chart.html"><strong>WorldMark</strong><span class="sub">Red/White/Blue</span></a>
+        <a href="/diamond-hgv-max-chart.html"><strong>Diamond / HGV Max</strong><span class="sub">9 collections</span></a>
+        <a href="/embarc-points-chart.html"><strong>Embarc Resorts</strong><span class="sub">9 of 9</span></a>
+        <a href="/four-seasons-chart.html"><strong>Four Seasons RC</strong><span class="sub">Fractional</span></a>
+        <a href="/montage-residences-chart.html"><strong>Montage</strong><span class="sub">Fractional</span></a>
+        <a href="/westin-whistler-chart.html"><strong>Westin Whistler</strong><span class="sub">Phase 2</span></a>
+        <div class="all-charts"><a href="/charts.html">View All Charts →</a></div>
+      </div>
+    </div>
+      <a href="/rentals.html">Rentals</a>
+      <a href="/deal-analyzer.html">Deal Analyzer</a>
+      <a href="/compare.html">Compare</a>
+      <a href="/about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="main-content">
+  <span class="eyebrow">Cross-System Point Converter</span>
+  <h1>Translate timeshare points <em>across systems.</em></h1>
+  <p class="lead">StarOptions, Marriott Vacation Club Points, Hilton Grand Vacations Points — finally in one calculator. Based on real-world per-point exchange value.</p>
+</section>
+
+<section class="tool">
+  <div class="converter">
+    <div class="conv-grid">
+      <div class="conv-side">
+        <label class="lbl" for="from-system">FROM</label>
+        <select id="from-system" onchange="convert()">
+          <option value="staroptions">StarOptions (Vistana)</option>
+          <option value="mvcp">Marriott Vacation Club Points</option>
+          <option value="hgv">Hilton Grand Vacations Points</option>
+          <option value="wyndham">Wyndham Points</option>
+        </select>
+        <input type="text" id="from-amount" class="big-amount" value="148,100" inputmode="numeric" oninput="convert()" aria-label="Amount to convert from">
+      </div>
+
+      <button class="swap-btn" onclick="swapSystems()" title="Swap" aria-label="Swap systems">⇄</button>
+
+      <div class="conv-side">
+        <label class="lbl" for="to-system">TO</label>
+        <select id="to-system" onchange="convert()">
+          <option value="staroptions">StarOptions (Vistana)</option>
+          <option value="mvcp" selected>Marriott Vacation Club Points</option>
+          <option value="hgv">Hilton Grand Vacations Points</option>
+          <option value="wyndham">Wyndham Points</option>
+        </select>
+        <input type="text" id="to-amount" class="big-amount" readonly value="—" aria-label="Converted amount">
+      </div>
+    </div>
+
+    <div class="context" id="context">—</div>
+  </div>
+</section>
+
+<section class="examples">
+  <h2>Common <em>conversions</em></h2>
+  <p class="sub">The amounts owners actually have. Click to load.</p>
+  <div class="ex-grid">
+    <div class="ex" onclick="loadExample(81000, 'staroptions', 'mvcp')">
+      <div class="ex-from">81,000 StarOptions</div>
+      <div class="ex-arrow">→ converts to ≈</div>
+      <div class="ex-to" id="ex-1">Marriott points</div>
+      <div class="ex-context">Standard 1BR Premium ownership</div>
+    </div>
+    <div class="ex" onclick="loadExample(148100, 'staroptions', 'mvcp')">
+      <div class="ex-from">148,100 StarOptions</div>
+      <div class="ex-arrow">→ converts to ≈</div>
+      <div class="ex-to" id="ex-2">Marriott points</div>
+      <div class="ex-context">Platinum Plus 2BR Lockoff</div>
+    </div>
+    <div class="ex" onclick="loadExample(3000, 'mvcp', 'staroptions')">
+      <div class="ex-from">3,000 MVCP</div>
+      <div class="ex-arrow">→ converts to ≈</div>
+      <div class="ex-to" id="ex-3">StarOptions</div>
+      <div class="ex-context">Common Marriott trust ownership</div>
+    </div>
+    <div class="ex" onclick="loadExample(7000, 'hgv', 'mvcp')">
+      <div class="ex-from">7,000 HGV Points</div>
+      <div class="ex-arrow">→ converts to ≈</div>
+      <div class="ex-to" id="ex-4">Marriott points</div>
+      <div class="ex-context">Mid-tier Hilton ownership</div>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="info-card">
+    <h2>How the math <em>works.</em></h2>
+    <p>Each timeshare points system uses its own arbitrary scale — there's no universal "point" the way there's a universal dollar. But each system's points buy approximately the same <strong>lodging value per point</strong> in their respective networks, and that's how we convert.</p>
+    <h3>Equivalence basis</h3>
+    <p>Our conversion uses <strong>median per-point reservation value</strong> across each system — what one point gets you in nightly lodging at a mid-tier property in mid-season. The ratios are approximately:</p>
+    <p style="font-family:var(--mono);font-size:13.5px;background:var(--cream);padding:14px 18px;border-radius:10px">
+      1 MVCP ≈ 50 StarOptions ≈ 23 HGV Points ≈ 70 Wyndham Points
+    </p>
+    <h3>Why it's an approximation</h3>
+    <p>Each system has wildly varying values within itself — a peak-season 2BR Oceanfront StarOption costs roughly 3x what an off-season 1BR costs. The same is true for MVCP, HGV, and Wyndham. So conversions are <strong>directional</strong> — useful for comparing ownerships, less useful for booking specifics.</p>
+    <p>For exact reservations costs in the Vistana network, see <a href="/staroptions-chart.html" style="color:var(--coral);font-weight:500">the full StarOptions chart</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo">Resort<em>Flips</em></div>
+        <div class="foot-tag">The Zillow of vacation ownership. Transparent. Expert. On your side. No Sales. Just Facts.</div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Major Charts</h4>
+          <a href="/marriott-points-chart.html">Marriott Abound</a>
+          <a href="/dvc-points-chart.html">DVC Points</a>
+          <a href="/staroptions-chart.html">Vistana StarOptions</a>
+          <a href="/hyatt-points-chart.html">Hyatt HRC</a>
+          <a href="/hgvc-points-chart.html">Hilton HGVC</a>
+          <a href="/wyndham-points-chart.html">Club Wyndham</a>
+          <a href="/charts.html"><strong>All 12 Charts →</strong></a>
+        </div>
+        <div class="foot-col">
+          <h4>Other Brands</h4>
+          <a href="/worldmark-points-chart.html">WorldMark</a>
+          <a href="/diamond-hgv-max-chart.html">Diamond/HGV Max</a>
+          <a href="/embarc-points-chart.html">Embarc</a>
+          <a href="/four-seasons-chart.html">Four Seasons RC</a>
+          <a href="/montage-residences-chart.html">Montage Residences</a>
+          <a href="/westin-whistler-chart.html">Westin Whistler</a>
+        </div>
+        <div class="foot-col">
+          <h4>Tools</h4>
+          <a href="/rentals.html">Search Rentals</a>
+          <a href="/deal-analyzer.html">Deal Analyzer</a>
+          <a href="/compare.html">Compare Two</a>
+          <a href="/point-converter.html">Point Converter</a>
+          <a href="/brands.html">Brand Directory</a>
+          <a href="/glossary.html">Glossary</a>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+      </div>
+    <div class="foot-bottom">
+      <span>© 2026 ResortFlips. All rights reserved.</span>
+      <span>Indigo Property Services LLC · Apex, NC</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/data-charts.js"></script>
+<script>
+// Conversion factors — uses POINT_EXCHANGE from data-charts.js (verified June 2026)
+// Note: 1 MVCP_legacy here corresponds to "mvcp" UI option since Abound is the modern equivalent.
+const RATES = {
+  staroptions: 1,
+  mvcp: 50,    // 1 MVCP ≈ 50 StarOptions
+  hgv: 23,     // 1 HGV ≈ 23 StarOptions
+  wyndham: 0.7, // 1 Wyndham ≈ 0.7 StarOptions (Wyndham points are inflated)
+};
+
+const LABELS = {
+  staroptions: 'StarOptions',
+  mvcp: 'Marriott Vacation Club Points',
+  hgv: 'Hilton Grand Vacations Points',
+  wyndham: 'Wyndham Points',
+};
+
+function parseAmt(s) {
+  return parseInt(String(s).replace(/[^\d]/g, '')) || 0;
+}
+
+function fmtAmt(n) {
+  return Math.round(n).toLocaleString();
+}
+
+function convert() {
+  const fromSys = document.getElementById('from-system').value;
+  const toSys = document.getElementById('to-system').value;
+  const fromAmt = parseAmt(document.getElementById('from-amount').value);
+
+  // Convert to "StarOptions equivalent" first, then to target
+  const soEquiv = fromAmt * RATES[fromSys];
+  const toAmt = soEquiv / RATES[toSys];
+
+  document.getElementById('to-amount').value = fmtAmt(toAmt);
+
+  // Context message
+  const ctx = document.getElementById('context');
+  if (fromSys === toSys) {
+    ctx.innerHTML = '<strong>Same system.</strong> No conversion needed.';
+  } else {
+    ctx.innerHTML = `<strong>${fmtAmt(fromAmt)} ${LABELS[fromSys]}</strong> is roughly equivalent to <em>${fmtAmt(toAmt)} ${LABELS[toSys]}</em> in lodging-value terms. Exact booking costs vary by resort, view, and season.`;
+  }
+}
+
+// Format input as commas
+document.getElementById('from-amount').addEventListener('input', e => {
+  const raw = e.target.value.replace(/[^\d]/g, '');
+  e.target.value = raw ? parseInt(raw).toLocaleString() : '';
+});
+
+function swapSystems() {
+  const fromSys = document.getElementById('from-system');
+  const toSys = document.getElementById('to-system');
+  const fromAmt = document.getElementById('from-amount');
+  const toAmt = document.getElementById('to-amount');
+
+  const tmpSys = fromSys.value;
+  fromSys.value = toSys.value;
+  toSys.value = tmpSys;
+
+  fromAmt.value = toAmt.value;
+  convert();
+}
+
+function loadExample(amount, from, to) {
+  document.getElementById('from-amount').value = amount.toLocaleString();
+  document.getElementById('from-system').value = from;
+  document.getElementById('to-system').value = to;
+  convert();
+  document.querySelector('.tool').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Pre-render example outputs
+function preRenderExamples() {
+  const examples = [
+    [81000, 'staroptions', 'mvcp', 'ex-1'],
+    [148100, 'staroptions', 'mvcp', 'ex-2'],
+    [3000, 'mvcp', 'staroptions', 'ex-3'],
+    [7000, 'hgv', 'mvcp', 'ex-4'],
+  ];
+  examples.forEach(([amt, from, to, elId]) => {
+    const soEquiv = amt * RATES[from];
+    const result = soEquiv / RATES[to];
+    document.getElementById(elId).textContent = fmtAmt(result) + ' ' + (
+      to === 'staroptions' ? 'StarOptions' :
+      to === 'mvcp' ? 'MVCP' :
+      to === 'hgv' ? 'HGV Points' :
+      'Wyndham points'
+    );
+  });
+}
+
+convert();
+preRenderExamples();
+</script>
+
+</body>
+</html>
